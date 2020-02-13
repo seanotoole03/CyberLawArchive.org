@@ -1,0 +1,134 @@
+/*{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:150px}*/
+
+meta {}
+
+body {
+  background-color: #efefef;
+}
+
+p {
+  
+}
+
+#first {
+  border-top: 1px #DDD solid;
+}
+
+#last {
+  border-bottom: 1px #DDD solid;
+}
+
+logo-text {
+  text-align: center;
+  font-size: 32px;
+  font-family: monospace;
+  margin-left: auto;
+  margin-right: auto;
+  clear: left;
+}
+
+img.logo {
+	width: 128px;
+	height: 128px;
+	img-align: left;
+	position: fixed;
+	left: 1em;
+	top: 1em;
+}
+
+a.img {
+	text-decoration: none;
+}
+
+a.logo {
+	color: gold;
+	text-decoration: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a.nav-link {
+	color: grey;
+}
+
+a.nav-link:hover {
+	color: gold;
+}
+
+table.nav-bar {
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-size: 16px;
+	font-family: monospace;
+	border-spacing: 12px 2px;
+	border-collapse: collapse;
+}
+
+th.nav-bar{
+	padding: 2px 10px;
+	border-spacing: 5px 1px;
+	border-left: 2px solid #7f7f7f;
+	border-right: 2px solid #7f7f7f;
+}
+
+th.nav-bar:hover{
+	background-color: #f5f5f5;
+}
+
+table.user-interaction {
+	float: right;
+	<!-- position: fixed;
+	top: 5px;
+	right: 10px; -->
+	
+	font-size: 12px;
+	font-family: monospace;
+	border-spacing: 12px 2px;
+	border-collapse: collapse;
+}
+
+th.user-interaction {
+	padding: 2px 5px;
+	border-spacing: 5px 1px;
+	border-left: 1px solid #7f7f7f;
+	border-right: 1px solid #7f7f7f;
+}
+
+div.top-window {
+	text-align: center;
+	overflow: hidden;
+	min-height: 128px;
+}
+
+div.nav-bar {
+	text-align:center;
+	font-size: 16px;
+	font-family: monospace;
+}
+
+div.main {
+  color: #111111;
+  background-color: white;
+  margin: 0px 10%;
+  padding: 10px 20px;
+  line-height: 25px;
+  text-indent: 30px;
+  border-left: 1px #DDD solid;
+  border-right: 1px #DDD solid;
+}
+
+.link-logo-text {
+	text-align: center;
+	font-size: 24px;
+	/*font-family:*/
+	
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+.delete {
+  text-decoration: line-through;
+}
