@@ -118,6 +118,15 @@ div.main {
   border-right: 1px #DDD solid;
 }
 
+div.footer {
+	text-align: center;
+	font-size: 10px;
+	position: fixed;
+	margin-left: auto;
+	margin-right: auto;
+	bottom: 1em;
+}
+
 .link-logo-text {
 	text-align: center;
 	font-size: 24px;
