@@ -21,7 +21,7 @@ p {
 logo-text {
   text-align: center;
   font-size: 32px;
-  font-family: monospace;
+  font-family: "Lucida Console", monaco, monospace;
   margin-left: auto;
   margin-right: auto;
   clear: left;
@@ -56,6 +56,7 @@ a.nav-link:hover {
 }
 
 table.nav-bar {
+	background-color: white;
 	margin-left:auto;
 	margin-right:auto;
 	text-align:center;
@@ -117,6 +118,23 @@ div.main {
   border-left: 1px #DDD solid;
   border-right: 1px #DDD solid;
 }
+
+.content {
+	font-size: 14px;
+	font-family: Helvetica;
+	text-align: right;
+	float: left;
+}
+
+.side-panel {
+	font-size: 14px;
+	font-family: Helvetica;
+	border: 0px;
+	text-align: center;
+	float: right;
+}
+
+
 
 div.footer {
 	text-align: center;
