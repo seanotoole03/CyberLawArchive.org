@@ -25,6 +25,8 @@ logo-text {
   margin-left: auto;
   margin-right: auto;
   clear: left;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 img.logo {
@@ -111,7 +113,7 @@ div.nav-bar {
 div.main {
   color: #111111;
   background-color: white;
-  margin: 0px 10%;
+  margin: 0px 5%;
   padding: 10px 20px;
   line-height: 25px;
   text-indent: 30px;
@@ -124,6 +126,7 @@ div.main {
 	font-family: Helvetica;
 	text-align: right;
 	float: left;
+	width: 70%;
 }
 
 .side-panel {
@@ -131,7 +134,8 @@ div.main {
 	font-family: Helvetica;
 	border: 0px;
 	text-align: center;
-	float: right;
+	float: left;
+	width: 30%;
 }
 
 
