@@ -12,30 +12,30 @@
 <!--	<header> CyberLawArchive.org </header> -->
 	<body>
 		<div class="top-window">
-			<a class="img" href="index.html"> <img class="logo" src="resources/cyber-law.png" alt="a gavel in front of a laptop screen"
+			<a class="img" href="index.php"> <img class="logo" src="resources/cyber-law.png" alt="a gavel in front of a laptop screen"
 			title="clip art cyber law image from online public domain source"/> </a>
-			<a class="logo" href="index.html"> <logo-text> Cyber Law Archive </logo-text> </a>
+			<a class="logo" href="index.php"> <logo-text> Cyber Law Archive </logo-text> </a>
 			<ul class="user-interaction"> 
-				<li class="user-interaction"><a class="nav-link" href="./login.html"> Login </a></li>
-				<li class="user-interaction"><a class="nav-link"  href="./login.html"> Sign Up </a></li>
-				<li class="user-interaction"><a class="nav-link"  href="./contact.html"> Contact Us </a></li>
+				<li class="user-interaction"><a class="nav-link" href="./login.php"> Login </a></li>
+				<li class="user-interaction"><a class="nav-link"  href="./login.php"> Sign Up </a></li>
+				<li class="user-interaction"><a class="nav-link"  href="./contact.php"> Contact Us </a></li>
 			</ul>
 		</div>
 		<div class="nav-bar">
 			<hr/>
 			<ul class="nav-bar">
-				<li class="nav-bar"><a class="nav-link" href="./intl.html"> International </a></li>
-				<li class="nav-bar"><a class="nav-link"  href="./country.html"> By Country </a></li>
-				<li class="nav-bar"><a class="nav-link"  href="./resources.html"> Legal Resources </a></li>
-				<li class="nav-bar"><a class="nav-link"  href="./about.html"> About </a></li>
+				<li class="nav-bar"><a class="nav-link" href="./intl.php"> International </a></li>
+				<li class="nav-bar"><a class="nav-link"  href="./country.php"> By Country </a></li>
+				<li class="nav-bar"><a class="nav-link"  href="./resources.php"> Legal Resources </a></li>
+				<li class="nav-bar"><a class="nav-link"  href="./about.php"> About </a></li>
 			</ul>
 			<hr/>
 		</div>
 		<div class="row main">
 			<div class="column main content">
 			<ul>
-				<li><h1>Laws and Important Documents By Country</h1></li>
-				<li><p><b> Each country...</b></p></li>
+				<li><h1>Legal and Documentary Resources</h1></li>
+				<li><p><b> Many other sites cover the laws and documents we preserve here, and many are fantastic at what they do.</b></p></li>
 			</ul>
 			</div>
 			<div class="column main side-panel">
@@ -46,7 +46,7 @@
 		</div>
 		<div class="footer" id="footer">
 			<ul class="user-interaction bottom"> 
-				<li class="user-interaction"><a class="nav-link"  href="./contact.html"> Contact Us </a></li>
+				<li class="user-interaction"><a class="nav-link"  href="./contact.php"> Contact Us </a></li>
 			</ul>
 		</div>
 	</body>

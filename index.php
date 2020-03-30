@@ -1,6 +1,6 @@
 <!-- https://young-bayou-40048.herokuapp.com/ -->
 <?php 
-	//include_once("index.html");
+	//include_once("index.php");
 	if(!isset($_SESSION)) {
 		session_start();
 	}
@@ -48,22 +48,22 @@
 					<li class="user-interaction"><a class="nav-link" href="./logout.php"> Logout </a></li>
 					<?php }else{ ?>
 					<li class="user-interaction"><a class="nav-link" onclick="openLogin()">  Login </a></li>
-					<li class="user-interaction"><a class="nav-link"  href="./login.html"> Sign Up </a></li>
+					<li class="user-interaction"><a class="nav-link"  href="./login.php"> Sign Up </a></li>
 				<?php } ?>
 
-				<li class="user-interaction"><a class="nav-link"  href="./contact.html"> Contact Us </a></li>
-				<!-- <li class="user-interaction"><input type="button" onclick="myFunction()" value="Test box"></li> -->
-				<li class="user-interaction"><input type="button" onclick="<?php $dao->testUserDB() ?>" value="Test box"></li>
+				<li class="user-interaction"><a class="nav-link"  href="./contact.php"> Contact Us </a></li>
+				<li class="user-interaction"><input type="button" onclick="myFunction()" value="Test box"></li>
+				<!-- <li class="user-interaction"><input type="button" onclick="<?php $dao->testUserDB() ?>" value="Test box"></li> -->
 			</ul>
 			
 		</div>
 		<div class="nav-bar">
 			<hr/>
 			<ul class="nav-bar">
-				<li class="nav-bar"><a class="nav-link" href="./intl.html"> International </a></li>
-				<li class="nav-bar"><a class="nav-link"  href="./country.html"> By Country </a></li>
-				<li class="nav-bar"><a class="nav-link"  href="./resources.html"> Legal Resources </a></li>
-				<li class="nav-bar"><a class="nav-link"  href="./about.html"> About </a></li>
+				<li class="nav-bar"><a class="nav-link" href="./intl.php"> International </a></li>
+				<li class="nav-bar"><a class="nav-link"  href="./country.php"> By Country </a></li>
+				<li class="nav-bar"><a class="nav-link"  href="./resources.php"> Legal Resources </a></li>
+				<li class="nav-bar"><a class="nav-link"  href="./about.php"> About </a></li>
 			</ul>
 			<hr/>
 		</div>
@@ -83,7 +83,7 @@
 		</div>
 		<div class="footer" id="footer">
 			<ul class="user-interaction bottom"> 
-				<li class="user-interaction"><a class="nav-link"  href="./contact.html"> Contact Us </a></li>
+				<li class="user-interaction"><a class="nav-link"  href="./contact.php"> Contact Us </a></li>
 			</ul>
 		</div>
 		
