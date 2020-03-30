@@ -61,7 +61,18 @@ class Dao {
     }  
   }
   
-  
+  public function getUsers() {
+    $conn = $this->getConnection();
+    if(is_null($conn)) {
+      return;
+    }
+    try {
+      return $conn->query("SELECT * FROM Users", PDO::FETCH_ASSOC);
+    } catch(Exception $e) {
+      echo print_r($e,1);
+      exit;
+    }
+  }  
 
 /**
   public function getComments() {

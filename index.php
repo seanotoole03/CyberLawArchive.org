@@ -52,8 +52,8 @@
 				<?php } ?>
 
 				<li class="user-interaction"><a class="nav-link"  href="./contact.php"> Contact Us </a></li>
-				<li class="user-interaction"><input type="button" onclick="myFunction()" value="Test box"></li>
-				<!-- <li class="user-interaction"><input type="button" onclick="?php $dao->testUserDB() ?>" value="Test box"></li> -->
+				<!-- <li class="user-interaction"><input type="button" onclick="myFunction()" value="Test box"></li> -->
+				<li class="user-interaction"><input type="button" onclick="<?php $dao->getUsers() ?>" value="Test box"></li>
 			</ul>
 			
 		</div>
@@ -86,8 +86,8 @@
 				<li class="user-interaction"><a class="nav-link"  href="./contact.php"> Contact Us </a></li>
 			</ul>
 		</div>
-		
-		<div class="form-popup" id="login">
+	</body>
+	<div class="form-popup" id="login">
 		  <form action="/login-handler.php" method= "post" class="form-container">
 			<h1>Login</h1>
 
@@ -100,6 +100,5 @@
 			<button type="submit" class="btn">Login</button>
 			<button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
 		  </form>
-		</div>
-	</body>
+	</div>
 </html>
