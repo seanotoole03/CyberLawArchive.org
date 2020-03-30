@@ -86,4 +86,18 @@
 			</ul>
 		</div>
 	</body>
+	<div class="form-popup" id="login">
+	  <form action="/login-handler.php" method= "post" class="form-container">
+		<h1>Login</h1>
+
+		<label for="username"><b>Username</b></label>
+		<input type="text" placeholder="Enter Username" name="username" required>
+
+		<label for="password"><b>Password</b></label>
+		<input type="password" placeholder="Enter Password" name="password" required>
+
+		<button type="submit" class="btn">Login</button>
+		<button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+	  </form>
+	</div>
 </html>

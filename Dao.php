@@ -37,6 +37,27 @@ class Dao {
       exit;
     }
   }
+  
+  public function getLogin($username, $password) {
+	$conn = $this->getConnection();
+	if(is_null($conn)) {
+      return;
+    }
+	try {
+	  $stmt = $conn->prepare("SELECT * FROM Users WHERE username='{$username}' AND password='{$password}'");
+	  $user = $conn->query($stmt);
+	  if($user == FALSE) {
+		?> <p> Database Error: <?= $conn->errorInfo()[2] ?> </p>
+		<?php 
+		return FALSE;
+	  } else {
+		return $user;
+	  }
+	} catch(Exception $e) {
+      echo print_r($e,1);
+      exit;
+    }  
+  }
 
 /**
   public function getComments() {

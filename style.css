@@ -210,6 +210,23 @@ div.footer {
 	text-decoration: line-through;
 }
 
+/* Popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: auto;
+  left: auto;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
 @media screen and (max-width:480px){
 	div.top-window > a.img{
 		display:none;
