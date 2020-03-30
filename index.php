@@ -47,7 +47,7 @@
 					<li> User: <? $_SESSION["username"] ?> </li>
 					<li class="user-interaction"><a class="nav-link" href="./logout.php"> Logout </a></li>
 					<?php }else{ ?>
-					<li class="user-interaction nav-link" onclick="openLogin()"> Login </li>
+					<li class="user-interaction"><a class="nav-link" href="openLogin()">  Login </a></li>
 					<li class="user-interaction"><a class="nav-link"  href="./login.html"> Sign Up </a></li>
 				<?php } ?>
 
