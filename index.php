@@ -6,4 +6,6 @@
 	}
 	require_once 'Dao.php';
 	$dao = new Dao();
+	
+	require_once 'index.html';
 ?>
