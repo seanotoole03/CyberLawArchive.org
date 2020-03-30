@@ -37,9 +37,9 @@
 <!--	<header> CyberLawArchive.org </header> -->
 	<body>
 		<div class="top-window">
-			<a class="img" href="index.html"> <img class="logo" src="resources/cyber-law.png" alt="a gavel in front of a laptop screen"
+			<a class="img" href="index.php"> <img class="logo" src="resources/cyber-law.png" alt="a gavel in front of a laptop screen"
 			title="clip art cyber law image from online public domain source"/> </a>
-			<a class="logo" href="index.html"> <logo-text> Cyber Law Archive </logo-text> </a>
+			<a class="logo" href="index.php"> <logo-text> Cyber Law Archive </logo-text> </a>
 			<ul class="user-interaction"> 
 				<?php 
 					if(isset($_SESSION["username"])){
