@@ -44,8 +44,8 @@
 				<?php } ?>
 
 				<li class="user-interaction"><a class="nav-link"  href="./contact.html"> Contact Us </a></li>
-				<li> <input type="button" onclick="myFunction()" value="Show alert box"> </li>
 			</ul>
+			<input type="button" onclick="myFunction()" value="Show alert box">
 		</div>
 		<div class="nav-bar">
 			<hr/>
