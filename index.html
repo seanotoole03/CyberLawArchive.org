@@ -1,3 +1,4 @@
+
 <html>
 	<head>
 		<title>Cyber Law Archive: Archiving Cyber Law, Regulation, and Discussion from Around the Globe</title>
@@ -8,6 +9,12 @@
 		<meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport" />
 		<link href="style.css" rel="stylesheet" />
 		<link href="resources/cyber-law.png" type="image/png" rel="shortcut icon" />
+		<script>
+			function myFunction()
+			{
+			alert("I am an alert box!"); // this is the message in ""
+			}
+		</script>
 	</head>
 <!--	<header> CyberLawArchive.org </header> -->
 	<body>
@@ -16,10 +23,19 @@
 			title="clip art cyber law image from online public domain source"/> </a>
 			<a class="logo" href="index.html"> <logo-text> Cyber Law Archive </logo-text> </a>
 			<ul class="user-interaction"> 
-				<li class="user-interaction"><a class="nav-link" href="./login.html"> Login </a></li>
-				<li class="user-interaction"><a class="nav-link"  href="./login.html"> Sign Up </a></li>
+				<?php 
+					if(isset($_SESSION["username"])){
+				?>
+					<li> User: <? $_SESSION["username"] ?> </li>
+					<li class="user-interaction"><a class="nav-link" href="./logout.php"> Logout </a></li>
+					<?php }else{ ?>
+					<li class="user-interaction"><a class="nav-link" href="./login.html"> Login </a></li>
+					<li class="user-interaction"><a class="nav-link"  href="./login.html"> Sign Up </a></li>
+				<?php } ?>
+
 				<li class="user-interaction"><a class="nav-link"  href="./contact.html"> Contact Us </a></li>
 			</ul>
+			<input type="button" onclick="myFunction()" value="Show alert box">
 		</div>
 		<div class="nav-bar">
 			<hr/>
