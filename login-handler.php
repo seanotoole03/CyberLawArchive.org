@@ -8,7 +8,7 @@
   $user;
   
 //  if ($username == $_POST['username'] && $password == $_POST['password']) {
-  $user = $dao->getLogin($username, $password) 	
+  $user = $dao->getLogin($username, $password); 	
   if($user != FALSE) {
     $_SESSION['auth'] = true;
 	$_SESSION['user'] = $user;
