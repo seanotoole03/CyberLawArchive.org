@@ -6,13 +6,6 @@
 	}
 	require_once 'Dao.php';
 	$dao = new Dao();
-	
-	<script>
-		function myFunction()
-		{
-		alert("I am an alert box!"); // this is the message in ""
-		}
-	</script>
 ?>
 
 <html>
@@ -25,6 +18,12 @@
 		<meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport" />
 		<link href="style.css" rel="stylesheet" />
 		<link href="resources/cyber-law.png" type="image/png" rel="shortcut icon" />
+		<script>
+			function myFunction()
+			{
+			alert("I am an alert box!"); // this is the message in ""
+			}
+		</script>
 	</head>
 <!--	<header> CyberLawArchive.org </header> -->
 	<body>
