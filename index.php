@@ -33,11 +33,11 @@
 			<a class="logo" href="index.html"> <logo-text> Cyber Law Archive </logo-text> </a>
 			<ul class="user-interaction"> 
 				<?php 
-					if(isset($_SESSION["username"]) {
+					if(isset($_SESSION["username"]){
 				?>
 					<li> User: <? $_SESSION["username"] ?> </li>
 					<li class="user-interaction"><a class="nav-link" href="./logout.php"> Logout </a></li>
-				<?php } else { ?>
+					<?php }else{ ?>
 					<li class="user-interaction"><a class="nav-link" href="./login.html"> Login </a></li>
 					<li class="user-interaction"><a class="nav-link"  href="./login.html"> Sign Up </a></li>
 				<?php } ?>
