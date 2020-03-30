@@ -5,10 +5,13 @@
   
   $username = $_POST["username"];
   $password = $_POST["password"];
+  $user;
   
 //  if ($username == $_POST['username'] && $password == $_POST['password']) {
-  if( $dao->getLogin($username, $password) != FALSE) {
+  $user = $dao->getLogin($username, $password) 	
+  if($user != FALSE) {
     $_SESSION['auth'] = true;
+	$_SESSION['user'] = $user;
     header("Location: https://young-bayou-40048.herokuapp.com/index.php");
     exit;
   } else {
