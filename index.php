@@ -53,7 +53,7 @@
 
 				<li class="user-interaction"><a class="nav-link"  href="./contact.html"> Contact Us </a></li>
 				<!-- <li class="user-interaction"><input type="button" onclick="myFunction()" value="Test box"></li> -->
-				<li class="user-interaction"><input type="button" onclick="$dao->testUserDB()" value="Test box"></li>
+				<li class="user-interaction"><input type="button" onclick="<?php $dao->testUserDB() ?>" value="Test box"></li>
 			</ul>
 			
 		</div>
