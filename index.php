@@ -25,11 +25,11 @@
 			alert("Operational!"); // this is the message in ""
 			}
 			
-			function openForm() {
+			function openLogin() {
 			  document.getElementById("login").style.display = "block";
 			}
 
-			function closeForm() {
+			function closeLogin() {
 			  document.getElementById("login").style.display = "none";
 			}
 		</script>
@@ -47,7 +47,7 @@
 					<li> User: <? $_SESSION["username"] ?> </li>
 					<li class="user-interaction"><a class="nav-link" href="./logout.php"> Logout </a></li>
 					<?php }else{ ?>
-					<li class="user-interaction"><a class="nav-link" href="./login.html"> Login </a></li>
+					<li class="user-interaction nav-link" onclick="openLogin()"> Login </li>
 					<li class="user-interaction"><a class="nav-link"  href="./login.html"> Sign Up </a></li>
 				<?php } ?>
 
