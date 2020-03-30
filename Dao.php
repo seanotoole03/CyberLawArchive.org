@@ -41,6 +41,7 @@ class Dao {
   public function getLogin($username, $password) {
 	$conn = $this->getConnection();
 	if(is_null($conn)) {
+	  $this->logger->LogError("Couldn't connect to the database.");
       return;
     }
 	try {
@@ -54,10 +55,13 @@ class Dao {
 		return $user;
 	  }
 	} catch(Exception $e) {
+	  $this->logger->LogError("Couldn't connect to the database: " . $e->getMessage());
       echo print_r($e,1);
       exit;
     }  
   }
+  
+  
 
 /**
   public function getComments() {
