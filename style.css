@@ -214,10 +214,10 @@ div.footer {
 .form-popup {
   display: none;
   position: fixed;
-  top: auto;
-  bottom: auto;
-  right: auto;
-  left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: auto;
   border: 3px solid #f1f1f1;
   z-index: 9;
 }
