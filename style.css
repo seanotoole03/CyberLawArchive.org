@@ -212,7 +212,7 @@ div.footer {
 
 /* Popup form - hidden by default */
 .form-popup {
-  display: none;
+  display: hidden;
   position: fixed;
   margin-top: auto;
   margin-bottom: auto;
