@@ -32,7 +32,10 @@ class Dao {
 	try {
 	  $stmt = $conn->prepare('SELECT * FROM Users');
 	  $stmt->execute();
-	}
+	} catch(Exception $e) {
+      echo print_r($e,1);
+      exit;
+    }
   }
 
 /**
