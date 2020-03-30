@@ -5,7 +5,7 @@
 	</head>
 	<body>
 		<h1> Leave a Comment! </h1>
-		<form name="commentForm" action="handler.php" method="POST">
+		<form name="commentForm" action="comments.php" method="POST">
 		  <div>
 			Username: <input type="text" name="username">
 		  </div>
