@@ -211,9 +211,9 @@ div.footer {
 }
 
 /* Popup form - hidden by default */
-.form-popup {
+div.form-popup {
   display: none;
-  position: relative;
+  position: fixed;
   margin-top: auto;
   margin-bottom: auto;
   margin-right: auto;
@@ -234,6 +234,20 @@ div.footer {
   margin: 5px 0 22px 0;
   border: none;
   background: #f1f1f1;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
 }
 
 @media screen and (max-width:480px){

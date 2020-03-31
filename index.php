@@ -26,7 +26,7 @@
 			}
 			
 			function openLogin() {
-			  document.getElementById('login').style.display = "none";
+			  document.getElementById('login').style.display = "block";
 			}
 
 			function closeLogin() {
@@ -58,7 +58,7 @@
 			
 		</div>
 		
-			<div class="form-popup" id="login">
+			<div id="login" class="form-popup">
 			  <form action="/login-handler.php" method= "post" class="form-container">
 				<h1>Login</h1>
 
