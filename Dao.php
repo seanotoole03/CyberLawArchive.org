@@ -16,7 +16,7 @@ class Dao {
 
   public function getConnection() {
     try {
-       $connection = new PDO("mysql:host={$this->host};port={$this->port};dbname={$this->dbname};user={$this->username}; dbname={$this->password)}");
+       $connection = new PDO("mysql:host={$this->host};port={$this->port};dbname={$this->dbname};user={$this->username};dbname={$this->password}");
     } catch (Exception $e) {
       $this->logger->LogError("Couldn't connect to the database: " . $e->getMessage());
       return null;

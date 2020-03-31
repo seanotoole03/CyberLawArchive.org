@@ -3,10 +3,10 @@
   require_once("Dao.php");
   $dao = new Dao();
   
-  //$username = $_POST["username"];
-  //$password = $_POST["password"];
-  $username = 'seano';
-  $password = 'Postgres.Admiral1'
+  $username = $_POST["username"];
+  $password = $_POST["password"];
+  //$username = 'seano';
+  //$password = 'Postgres.Admiral1'
   $user;
   
 //  if ($username == $_POST['username'] && $password == $_POST['password']) {

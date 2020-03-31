@@ -22,7 +22,7 @@
 		<script>
 			function myFunction()
 			{
-			alert("Operational!"); // this is the message in ""
+			alert("Operational!"); 
 			}
 			
 			function openLogin() {
