@@ -13,9 +13,8 @@ $dsn = "pgsql:host=$host;port=5432;dbname=$db;user=$username;password=$password"
  
 try{
  // create a PostgreSQL database connection
- echo $dsn . "\n"; 
+ echo $dsn . "/n"; 
  $conn = new PDO($dsn);
- echo $conn . "\n";
  
 //  $conn = new PDO($dsn, $username, $password);
  
