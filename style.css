@@ -228,6 +228,14 @@ div.footer {
   background-color: white;
 }
 
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
 @media screen and (max-width:480px){
 	div.top-window > a.img{
 		display:none;
