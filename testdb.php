@@ -1,6 +1,6 @@
 
 <?php
-  $databaseURL = 'jdbc:postgresql://ec2-184-72-236-57.compute-1.amazonaws.com:5432/d5jnebdbvh02jr';
+  $databaseURL = 'postgresql://ec2-184-72-236-57.compute-1.amazonaws.com:5432/d5jnebdbvh02jr';
 //require_once 'dbconfig.php';
   $host = 'ec2-184-72-236-57.compute-1.amazonaws.com';
   $dbname = 'd5jnebdbvh02jr';
