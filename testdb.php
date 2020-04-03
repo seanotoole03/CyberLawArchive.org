@@ -41,13 +41,18 @@ try{
 		throw new \Exception("Error reading database configuration file");
 	}
 	// connect to the postgresql database
-	$conStr = sprintf("pgsql:host=%s;port=%d;dbname=%s;user=%s;password=%s", 
+	/*$conStr = sprintf("pgsql:host=%s;port=%d;dbname=%s;user=%s;password=%s", 
 			$params['host'], 
 			$params['port'], 
 			$params['database'], 
 			$params['user'], 
+			$params['password']);*/
+	$conStr = sprintf("pgsql:host=%s;\dbname=%s;user=%s;password=%s", 
+			$params['host'], 
+			$params['database'], 
+			$params['user'], 
 			$params['password']);
-
+			
 	$pdo = new \PDO($conStr);
 	$pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
 ?>
