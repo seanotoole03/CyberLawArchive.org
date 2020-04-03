@@ -20,7 +20,7 @@
 			$pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
 			 // display a message if connected to the PostgreSQL successfully
 			if($pdo){
-			 echo "Connected to the <strong>$params['dbname']</strong> database successfully!";
+			 echo "Connected to the database successfully!";
 			 }
 		}catch (PDOException $e){
 		 // report error message
