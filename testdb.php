@@ -45,13 +45,13 @@ try{
 	/*$conStr = sprintf("pgsql:host=%s;port=%d;dbname=%s;user=%s;password=%s", 
 			$params['host'], 
 			$params['port'], 
-			$params['database'], 
-			$params['user'], 
+			$params['dbname'], 
+			$params['username'], 
 			$params['password']);*/
 	$conStr = sprintf("pgsql:host=%s;\dbname=%s;user=%s;password=%s", 
 			$params['host'], 
-			$params['database'], 
-			$params['user'], 
+			$params['dbname'], 
+			$params['username'], 
 			$params['password']);
 			
 	$pdo = new \PDO($conStr);
