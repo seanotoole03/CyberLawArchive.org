@@ -16,6 +16,7 @@
 		discussions as they relate to the cyber world." />
 		<meta name="keywords" content="cyber law, archive, policy, regulation, discussion, cybersecurity, hacking" />
 		<meta charset="utf-8" />
+		<meta author="a_complete_idiot" />
 		<meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport" />
 		<link href="style.css" rel="stylesheet" />
 		<link href="resources/cyber-law.png" type="image/png" rel="shortcut icon" />

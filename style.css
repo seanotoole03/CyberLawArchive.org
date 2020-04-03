@@ -273,7 +273,7 @@ button:hover {
 }
 
 .cancel {
-  background-color: red;	
+  background-color: #be0000;	
 }
 
 @media screen and (max-width:480px){
