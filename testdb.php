@@ -51,6 +51,6 @@ try{
 	$pdo = new \PDO($conStr);
 	$pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
 ?>
-</p>
+	</p>
 	</body>
 </html>
