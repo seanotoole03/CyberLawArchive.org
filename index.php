@@ -32,6 +32,14 @@
 			function closeLogin() {
 			  document.getElementById('login').style.display = "none";
 			}
+			
+			function openSignUp() {
+			  document.getElementById('signUp').style.display = "block";
+			}
+
+			function closeSignUp() {
+			  document.getElementById('signUp').style.display = "none";
+			}
 		</script>
 	</head>
 <!--	<header> CyberLawArchive.org </header> -->
@@ -55,9 +63,8 @@
 				<li class="user-interaction"><input type="button" onclick="myFunction()" value="Test box"></li> 
 				<!-- <li class="user-interaction"><input type="button" onclick="?php $dao->getUsers() ?>" value="Test box"></li> -->
 			</ul>
-			
 		</div>
-		<div id="login" class="form-popup" >	
+		<div id="login" class="form-popup modal" >	
 			<div id="login-content" class="modal-content">
 			  <form action="/login-handler.php" method= "post" class="form-container">
 				<h1>Login</h1>
@@ -69,7 +76,26 @@
 				<input type="password" placeholder="Enter Password" name="password" required>
 
 				<button type="submit" class="btn">Login</button>
-				<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+				<button type="button" class="btn cancel" onclick="closeLogin()">Close</button>
+			  </form>
+			</div>
+		</div>
+		<div id="signUp" class="form-popup modal" >	
+			<div id="signUp-content" class="modal-content">
+			  <form action="/signUp-handler.php" method= "post" class="form-container"> /*to do*/
+				<h1>Sign Up</h1>
+
+				<label for="username"><b>Username</b></label>
+				<input type="text" placeholder="Enter Username" name="username" required>
+
+				<label for="password"><b>Password</b></label>
+				<input type="password" placeholder="Enter New Password" name="password" required>
+				
+				<label for="password"><b>Password</b></label>
+				<input type="password" placeholder="Confirm New Password" name="password" required>
+
+				<button type="submit" class="btn">Register</button>
+				<button type="button" class="btn cancel" onclick="closeSignUp()">Close</button>
 			  </form>
 			</div>
 		</div>
