@@ -45,6 +45,7 @@ class Dao {
   public function testUserDB() {
 	$conn = $this->getConnection();
 	if(is_null($conn)) {
+	  $this->logger->LogError("Couldn't connect to the database.");
       return;
     }
 	try {
@@ -64,7 +65,8 @@ class Dao {
     }
 	try {
 	  $stmt = $conn->prepare("SELECT * FROM Users WHERE username='{$username}' AND password='{$password}'");
-	  $user = $conn->query($stmt);
+	  $stmt->execute();
+	//  $user = $conn->query($stmt);
 	  if($user == FALSE) {
 		?> <p> Database Error: <?= $conn->errorInfo()[2] ?> </p>
 		<?php 
