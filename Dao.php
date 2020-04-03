@@ -51,7 +51,7 @@ class Dao {
 	try {
 	  $stmt = $conn->prepare('SELECT * FROM Users');
 	  $stmt->execute();
-	  echo print_r($stmt);
+	  echo print_r($stmt->fetchAll());
 	  return $stmt;
 	} catch(Exception $e) {
       echo print_r($e,1);
