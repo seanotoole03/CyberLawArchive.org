@@ -40,6 +40,7 @@ try{
 }
 ?>
 <html>
+	<head></head>
 	<body>
 	{$db} \n
 	</body>
