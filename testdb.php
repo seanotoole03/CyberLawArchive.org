@@ -42,7 +42,10 @@ try{
 <html>
 	<head></head>
 	<body>
-	<p>"<?php echo "pgsql:" . sprintf(
+	<p>"<?php
+	$databaseURL = '//ec2-184-72-236-57.compute-1.amazonaws.com:5432/d5jnebdbvh02jr';
+	$db = parse_url(getenv($databaseURL));
+	echo "pgsql:" . sprintf(
 	"host=%s;port=%s;user=%s;password=%s;dbname=%s",
 	$db["host"],
 	$db["port"],
