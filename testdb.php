@@ -42,13 +42,12 @@ try{
 <html>
 	<head></head>
 	<body>
-	<p>"<?php "pgsql:" . sprintf(
+	<p>"<?php echo "pgsql:" . sprintf(
 	"host=%s;port=%s;user=%s;password=%s;dbname=%s",
 	$db["host"],
 	$db["port"],
 	$db["user"],
 	$db["pass"],
-	ltrim($db["path"], "/")
-  ) ?>"</p>
+	ltrim($db["path"], "/")) ?>"</p>
 	</body>
 </html>
