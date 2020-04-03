@@ -42,6 +42,6 @@ try{
 <html>
 	<head></head>
 	<body>
-	<p>"<?php {$db} ?>"</p>
+	<p>"<?php $db ?>"</p>
 	</body>
 </html>
