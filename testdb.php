@@ -18,10 +18,9 @@
 					
 			$pdo = new \PDO($conStr);
 			$pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
-			$conn = new PDO('pgsql:host={$host};port=5432;dbname=$db;user=$username;password=$password');
 			 // display a message if connected to the PostgreSQL successfully
-			if($conn){
-			 echo "Connected to the <strong>$db</strong> database successfully!";
+			if($pdo){
+			 echo "Connected to the <strong>$params['dbname']</strong> database successfully!";
 			 }
 		}catch (PDOException $e){
 		 // report error message
