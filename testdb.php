@@ -29,9 +29,9 @@ try{
 	$db["pass"],
 	ltrim($db["path"], "/")
   )); */
-//$conn = new PDO($dsn);
- 
-  $conn = new PDO($dsn, $username, $password);
+  $conn = new PDO('pgsql:host={$host};port=5432;dbname=$db;user=$username;password=$password');
+  //$conn = new PDO($dsn);
+  //$conn = new PDO($dsn, $username, $password);
  
  // display a message if connected to the PostgreSQL successfully
  if($conn){

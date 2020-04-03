@@ -69,7 +69,7 @@
 				<input type="password" placeholder="Enter Password" name="password" required>
 
 				<button type="submit" class="btn">Login</button>
-				<button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+				<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
 			  </form>
 			</div>
 		</div>
