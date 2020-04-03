@@ -31,7 +31,7 @@ try{
   )); */
 //$conn = new PDO($dsn);
  
-  $conn = new PDO($dsn, $username, $password);
+  $conn = new PDO($dsn, user=$username, password=$password);
  
  // display a message if connected to the PostgreSQL successfully
  if($conn){
