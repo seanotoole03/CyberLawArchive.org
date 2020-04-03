@@ -42,6 +42,6 @@ try{
 <html>
 	<head></head>
 	<body>
-	{$db} \n
+	<p>"{$db} \n"</p>
 	</body>
 </html>
