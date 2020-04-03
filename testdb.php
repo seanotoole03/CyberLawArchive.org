@@ -17,7 +17,7 @@ try{
  // create a PostgreSQL database connection
  //echo $dsn . "\n"; 
  $db = parse_url(getenv($databaseURL));
- echo $db . "\n"; 
+ //echo $db . "\n"; 
  $conn = new PDO("pgsql:" . sprintf(
 	"host=%s;port=%s;user=%s;password=%s;dbname=%s",
 	$db["host"],
