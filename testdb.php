@@ -37,7 +37,7 @@
 		 echo $e->getMessage();
 		}
 		
-		$dao->get();
+		$stmt = $dao->testUserDB();
 	?>
 	</p>
 	</body>
