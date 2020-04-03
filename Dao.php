@@ -15,13 +15,31 @@ class Dao {
   }
 
   public function getConnection() {
-    try {
-       $connection = new PDO("mysql:host={$this->host};port={$this->port};dbname={$this->dbname};user={$this->username};dbname={$this->password}");
+	$pdo;  
+    $params = parse_ini_file('database.ini');
+	if ($params === false) {
+		throw new \Exception("Error reading database configuration file");
+	}
+	print_r($params);
+	// connect to the postgresql database
+	try{
+		$conStr = sprintf("pgsql:host=%s;dbname=%s;user=%s;password=%s", 
+				$params['host'], 
+				$params['dbname'], 
+				$params['username'], 
+				$params['password']);
+				
+		$pdo = new \PDO($conStr);
+		$pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+		 // display a message if connected to the PostgreSQL successfully
+		if($pdo){
+		 echo "Connected to the database successfully!";
+		 }
     } catch (Exception $e) {
       $this->logger->LogError("Couldn't connect to the database: " . $e->getMessage());
       return null;
     }
-    return $connection;
+    return $pdo;
   }
   
   public function testUserDB() {
