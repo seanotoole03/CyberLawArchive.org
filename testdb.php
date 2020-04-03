@@ -1,7 +1,8 @@
 <html>
 	<head></head>
 	<body>
-	<p>
+	<p> Database Connection Test File
+	
 	<?php
 /*  $databaseURL = '//ec2-184-72-236-57.compute-1.amazonaws.com:5432/d5jnebdbvh02jr';
   $db;
