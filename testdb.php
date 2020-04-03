@@ -3,14 +3,8 @@
 	<body>
 	<p>
 	<?php
-  $databaseURL = '//ec2-184-72-236-57.compute-1.amazonaws.com:5432/d5jnebdbvh02jr';
+/*  $databaseURL = '//ec2-184-72-236-57.compute-1.amazonaws.com:5432/d5jnebdbvh02jr';
   $db;
-//require_once 'dbconfig.php';
-  $host = 'ec2-184-72-236-57.compute-1.amazonaws.com';
-  $dbname = 'd5jnebdbvh02jr';
-  $username = 'rnxnybdobgoqry';
-  $password = '6bd6d8623ad04c85a8407c24244314680ae89a962e15e546674b78d14c90a9ff';
-  $port = '5432';
  
 //$dsn = "pgsql:host=$host;port=5432;dbname=$db;user=$username;password=$password";
 $dsn = "pgsql:host=$host;port=5432;dbname=$db"; 
@@ -21,14 +15,14 @@ try{
  //echo $dsn . "\n"; 
  //$db = parse_url(getenv($databaseURL));
  //echo $db . "\n"; 
-/* $conn = new PDO("pgsql:" . sprintf(
+ $conn = new PDO("pgsql:" . sprintf(
 	"host=%s;port=%s;user=%s;password=%s;dbname=%s",
 	$db["host"],
 	$db["port"],
 	$db["user"],
 	$db["pass"],
 	ltrim($db["path"], "/")
-  )); */
+  )); 
   $conn = new PDO('pgsql:host={$host};port=5432;dbname=$db;user=$username;password=$password');
   //$conn = new PDO($dsn);
   //$conn = new PDO($dsn, $username, $password);
@@ -40,7 +34,21 @@ try{
 }catch (PDOException $e){
  // report error message
  echo $e->getMessage();
-}
+} */
+	$params = parse_ini_file('database.ini');
+	if ($params === false) {
+		throw new \Exception("Error reading database configuration file");
+	}
+	// connect to the postgresql database
+	$conStr = sprintf("pgsql:host=%s;port=%d;dbname=%s;user=%s;password=%s", 
+			$params['host'], 
+			$params['port'], 
+			$params['database'], 
+			$params['user'], 
+			$params['password']);
+
+	$pdo = new \PDO($conStr);
+	$pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
 ?>
 </p>
 	</body>

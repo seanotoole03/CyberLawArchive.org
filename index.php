@@ -20,11 +20,7 @@
 		<link href="style.css" rel="stylesheet" />
 		<link href="resources/cyber-law.png" type="image/png" rel="shortcut icon" />
 		<script>
-			function myFunction()
-			{
-			alert("Operational!"); 
-			}
-			
+
 			function openLogin() {
 			  document.getElementById('login').style.display = "block";
 			}
@@ -56,11 +52,10 @@
 					<li class="user-interaction"><a class="nav-link" href="./logout.php"> Logout </a></li>
 					<?php }else{ ?>
 					<li class="user-interaction"><a class="nav-link" href="#" onclick="openLogin()">  Login </a></li>
-					<li class="user-interaction"><a class="nav-link"  href="./login.php"> Sign Up </a></li>
+					<li class="user-interaction"><a class="nav-link"  href="#" onclick="openSignUp()"> Sign Up </a></li>
 				<?php } ?>
 
 				<li class="user-interaction"><a class="nav-link"  href="./contact.php"> Contact Us </a></li>
-				<li class="user-interaction"><input type="button" onclick="myFunction()" value="Test box"></li> 
 				<!-- <li class="user-interaction"><input type="button" onclick="?php $dao->getUsers() ?>" value="Test box"></li> -->
 			</ul>
 		</div>

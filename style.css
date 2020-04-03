@@ -254,7 +254,8 @@ div.footer {
   background-color: #fefefe;
   margin: 5% auto 15% auto; 
   border: 1px solid #888;
-  width: 80%; 
+  max-width: 320px;
+ /* width: 80%; */
 }
 
 button {
@@ -272,7 +273,7 @@ button:hover {
 }
 
 .cancel {
-  color: red;	
+  background-color: red;	
 }
 
 @media screen and (max-width:480px){
