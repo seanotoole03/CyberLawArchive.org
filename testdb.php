@@ -48,7 +48,7 @@ try{
 			$params['dbname'], 
 			$params['username'], 
 			$params['password']);*/
-	$conStr = sprintf("pgsql:host=%s;\dbname=%s;user=%s;password=%s", 
+	$conStr = sprintf("pgsql:host=%s;dbname=%s;user=%s;password=%s", 
 			$params['host'], 
 			$params['dbname'], 
 			$params['username'], 
