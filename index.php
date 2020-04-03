@@ -57,8 +57,8 @@
 			</ul>
 			
 		</div>
-		<div id="login" >	
-			<div id="login-content" class="modal-content form-popup">
+		<div id="login" class="form-popup" >	
+			<div id="login-content" class="modal-content">
 			  <form action="/login-handler.php" method= "post" class="form-container">
 				<h1>Login</h1>
 
