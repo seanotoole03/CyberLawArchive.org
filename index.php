@@ -45,10 +45,10 @@
 			<ul class="user-interaction"> 
 				<?php
 					if (isset($_SESSION['errors'])) {
-					  ?> <script>openLogin()</script> <?php	
+					  ?> <script type="text/javascript">openLogin()</script> <?php	
 					} ?>
 				<?php 
-					if(isset($_SESSION["user"])){
+					if(isset($_SESSION['user'])){
 				?>
 					<li> User: <? $_SESSION["username"] ?> </li>
 					<li class="user-interaction"><a class="nav-link" href="./logout.php"> Logout </a></li>
