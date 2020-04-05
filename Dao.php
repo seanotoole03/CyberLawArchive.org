@@ -67,8 +67,7 @@ class Dao {
 	try {
 	  $stmt = $conn->prepare("SELECT * FROM Users WHERE username='{$username}' AND password='{$password}'");
 	  $stmt->execute();
-	//  $user = $conn->query($stmt);
-	  if($user == FALSE) {
+	  if($stmt->fetch() == FALSE) {
 		?> <p> Database Error: <?= $conn->errorInfo()[2] ?> </p>
 		<?php 
 		return FALSE;
