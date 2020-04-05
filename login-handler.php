@@ -42,7 +42,7 @@
   }
   
   	
-  unset($_SESSION['form']);
+  //unset($_SESSION['form']);
 
   require_once 'Dao.php';
   $dao = new Dao();
