@@ -9,9 +9,14 @@
 	
 	$name_preset = "";
 	$comment_preset = "";
+	$signUp_name_preset = "";
+	$signup_pass_preset = "";
+	$signUp_email_preset = "";
+	
 	if (isset($_SESSION['form'])) {
 		$name_preset = $_SESSION['form']['username'];
 		$pass_preset = $_SESSION['form']['password'];
+		// INCLUDE SEPARATE PRESETS FOR SIGNUP
 	}
 	
 ?>
@@ -40,7 +45,7 @@
 			<ul class="user-interaction"> 
 				<?php
 					if (isset($_SESSION['errors'])) {
-					  openLogin();	
+					  <script>openLogin()</script>	
 					} ?>
 				<?php 
 					if(isset($_SESSION["username"])){
@@ -63,16 +68,17 @@
 
 				<label for="username"><b>Username</b></label>
 				<input type="text" value="<?php echo $name_preset; ?>" placeholder="Enter Username" name="username" required>
+		
+				<label for="password"><b>Password</b></label>
+				<input type="password" value="<?php echo $pass_preset; ?>" placeholder="Enter Password" name="password" required>
+				
 				<?php
 					if (isset($_SESSION['errors'])) {
 					  foreach ($_SESSION['errors'] as $error) {
 						echo "<div class='error'>{$error}<span class='close_error'>X</span></div>";
 					  }
 					  unset($_SESSION['errors']);
-					} ?>
-				<label for="password"><b>Password</b></label>
-				<input type="password" value="<?php echo $pass_preset; ?>" placeholder="Enter Password" name="password" required>
-
+					} ?>	
 				<button type="submit" class="btn">Login</button>
 				<button type="button" class="btn cancel" onclick="closeLogin()">Close</button>
 			  </form>
@@ -84,13 +90,16 @@
 				<h1>Sign Up</h1>
 
 				<label for="username"><b>Username</b></label>
-				<input type="text" placeholder="Enter Username" name="username" required>
+				<input type="text" value="<?php echo $signUp_name_preset; ?>" placeholder="Enter Username" name="username" required>
 
 				<label for="password"><b>Password</b></label>
 				<input type="password" placeholder="Enter New Password" name="password" required>
 				
 				<label for="password"><b>Password</b></label>
-				<input type="password" placeholder="Confirm New Password" name="password" required>
+				<input type="password" value="<?php echo $signup_pass_preset; ?>" placeholder="Confirm New Password" name="password" required>
+				
+				<label for="email"><b>Email Address</b></label>
+				<input type="text" value="<?php echo $signUp_email_preset; ?>" placeholder="Enter Contact Email Address" name="email" required>
 
 				<button type="submit" class="btn">Register</button>
 				<button type="button" class="btn cancel" onclick="closeSignUp()">Close</button>
