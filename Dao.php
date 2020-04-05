@@ -67,12 +67,12 @@ class Dao {
 	try {
 	  $stmt = $conn->prepare("SELECT * FROM Users WHERE username='{$username}' AND password='{$password}'");
 	  $stmt->execute();
-	  if($stmt->fetch() == FALSE) {
+	  if($stmt->fetch() === FALSE) {
 		?> <p> Database Error: <?= $conn->errorInfo()[2] ?> </p>
 		<?php 
 		return FALSE;
 	  } else {
-		return $stmt->fetch(PDO::FETCH_ASSOC);
+		return $stmt;
 	  }
 	} catch(Exception $e) {
 	  $this->logger->LogError("Couldn't connect to the database: " . $e->getMessage());
