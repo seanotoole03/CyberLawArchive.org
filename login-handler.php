@@ -23,8 +23,8 @@
 	$_SESSION['user'] = $username;	
 	setcookie('user', $username);
 	setcookie('permissions', $user->fetch(PDO::FETCH_ASSOC)['permissions']);
-	unset($_SESSION['errors']);
-	unset($_SESSION['form']);
+	//unset($_SESSION['errors']);
+	//unset($_SESSION['form']);
     header("Location: https://young-bayou-40048.herokuapp.com/index.php");
     exit;
   }else{
