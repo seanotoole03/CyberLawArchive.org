@@ -29,16 +29,16 @@
 			$pdo = new \PDO($conStr);
 			$pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
 			 // display a message if connected to the PostgreSQL successfully
-			if($pdo){
+			/*if($pdo){
 			 echo "Connected to the database successfully!";
-			 }
+			 }*/
 		}catch (PDOException $e){
 		 // report error message
 		 echo $e->getMessage();
 		}
 		
 		$stmt = $dao->testUserDB();
-		echo print_r($stmt->fetchAll());
+		echo print_r($stmt->fetch());
 		$user = 'seano'; $pass='Postgres.Admiral1';
 		$testRes = $dao->getLogin($user,$pass);
 		echo print_r($testRes->fetchAll());

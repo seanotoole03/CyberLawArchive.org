@@ -32,9 +32,9 @@ class Dao {
 		$pdo = new \PDO($conStr);
 		$pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
 		 // display a message if connected to the PostgreSQL successfully
-		if($pdo){
+		/*if($pdo){
 		 echo "Connected to the database successfully!";
-		 }
+		 }*/
     } catch (Exception $e) {
       $this->logger->LogError("Couldn't connect to the database: " . $e->getMessage());
       return null;
