@@ -59,7 +59,6 @@
 				<?php } ?>
 
 				<li class="user-interaction"><a class="nav-link"  href="./contact.php"> Contact Us </a></li>
-				<!-- <li class="user-interaction"><input type="button" onclick="?php $dao->getUsers() ?>" value="Test box"></li> -->
 			</ul>
 		</div>
 		<div id="login" class="form-popup modal" >	
