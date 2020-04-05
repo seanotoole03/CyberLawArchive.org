@@ -72,7 +72,7 @@ class Dao {
 		<?php 
 		return FALSE;
 	  } else {
-		return $user;
+		return $stmt->fetch(PDO::FETCH_ASSOC);
 	  }
 	} catch(Exception $e) {
 	  $this->logger->LogError("Couldn't connect to the database: " . $e->getMessage());

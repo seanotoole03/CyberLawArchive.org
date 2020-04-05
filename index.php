@@ -100,7 +100,13 @@
 				
 				<label for="email"><b>Email Address</b></label>
 				<input type="text" value="<?php echo $signUp_email_preset; ?>" placeholder="Enter Contact Email Address" name="email" required>
-
+				<?php
+					if (isset($_SESSION['errors'])) {
+					  foreach ($_SESSION['errors'] as $error) {
+						echo "<div class='error'>{$error}</div>";
+					  }
+					  unset($_SESSION['errors']);
+					} ?>	
 				<button type="submit" class="btn">Register</button>
 				<button type="button" class="btn cancel" onclick="closeSignUp()">Close</button>
 			  </form>

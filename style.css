@@ -277,7 +277,7 @@ button:hover {
 }
 
 .error {
-  color; #be0000;
+  color: #be0000;
 }
 
 @media screen and (max-width:480px){
