@@ -48,7 +48,7 @@
 					  ?> <script type="text/javascript">openLogin()</script> <?php	
 					} ?>
 				<?php 
-					if(isset($_SESSION['user'])){
+					if(isset($_SESSION['user']) && $_SESSION['auth']){
 				?>
 					<li class="user-interaction"> User: <?php echo $_SESSION['user'] ?> </li>
 					<li class="user-interaction"><a class="nav-link" href="./logout.php"> Logout </a></li>
