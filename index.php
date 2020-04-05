@@ -8,7 +8,7 @@
 	$dao = new Dao();
 	
 	$name_preset = "";
-	$comment_preset = "";
+	$pass_preset = "";
 	$signUp_name_preset = "";
 	$signup_pass_preset = "";
 	$signUp_email_preset = "";
@@ -54,7 +54,7 @@
 					<li class="user-interaction"> User: <?php echo $_SESSION['user'] ?> </li>
 					<li class="user-interaction"><a class="nav-link" href="./logout.php"> Logout </a></li>
 					<?php }else{ ?>
-					<li class="user-interaction"> Form: <?php echo print_r($_SESSION); echo print($_SESSION['message']) ?> </li>
+					<li class="user-interaction"> Form: <?php echo print_r($_SESSION); echo print(" " . $_SESSION['message']) ?> </li>
 					<li class="user-interaction"><a class="nav-link" href="#" onclick="openLogin()">  Login </a></li>
 					<li class="user-interaction"><a class="nav-link"  href="#" onclick="openSignUp()"> Sign Up </a></li>
 				<?php } ?>
@@ -98,7 +98,7 @@
 				<input type="password" placeholder="Enter New Password" name="password" required>
 				
 				<label for="password"><b>Password</b></label>
-				<input type="password" value="<?php echo $signup_pass_preset; ?>" placeholder="Confirm New Password" name="password" required>
+				<input type="password" value="<?php echo $signUp_pass_preset; ?>" placeholder="Confirm New Password" name="password" required>
 				
 				<label for="email"><b>Email Address</b></label>
 				<input type="text" value="<?php echo $signUp_email_preset; ?>" placeholder="Enter Contact Email Address" name="email" required>
