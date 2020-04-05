@@ -33,7 +33,7 @@
 		<meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport" />
 		<link href="style.css" rel="stylesheet" />
 		<link href="resources/cyber-law.png" type="image/png" rel="shortcut icon" />
-		<script src="jquery-3.4.1.min.js"></script>
+		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/functions.js"></script>
 
 	</head>
@@ -46,7 +46,7 @@
 			<ul class="user-interaction"> 
 				<?php
 					if (isset($_SESSION['errors'])) {
-					  ?> <script>$( document ).ready(openLogin());</script> <?php	
+					  ?> <script> $( document ).ready(openLogin()); </script> <?php	
 					} unset($_SESSION['user']); ?>
 				<?php 
 					if(isset($_SESSION['user']) && $_SESSION['auth'] === true){
