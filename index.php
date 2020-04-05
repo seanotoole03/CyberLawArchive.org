@@ -48,7 +48,7 @@
 					  ?> <script>openLogin()</script> <?php	
 					} ?>
 				<?php 
-					if(isset($_SESSION["username"])){
+					if(isset($_SESSION["user"])){
 				?>
 					<li> User: <? $_SESSION["username"] ?> </li>
 					<li class="user-interaction"><a class="nav-link" href="./logout.php"> Logout </a></li>
