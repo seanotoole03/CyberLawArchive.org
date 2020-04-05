@@ -22,6 +22,8 @@
   if($user != FALSE){
     $_SESSION['auth'] = TRUE;
 	$_SESSION['user'] = $username;	
+	$_COOKIE['user'] = $username;
+	$_COOKIE['permissions'] = $user->fetch()['permissions'];
 	unset($_SESSION['errors']);
 	unset($_SESSION['form']);
     header("Location: https://young-bayou-40048.herokuapp.com/index.php");
@@ -30,6 +32,7 @@
     $_SESSION['auth'] = FALSE;
     $_SESSION['message'] = "Invalid username or password";
 	unset($_SESSION['user']);
+	unset($_COOKIE);
 	$errors = array();
 	$errors[]="Invalid username or password.";
     // validate
