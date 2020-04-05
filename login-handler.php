@@ -7,7 +7,7 @@
   $password = $_POST["password"];
   //$username = 'seano';
   //$password = 'Postgres.Admiral1'
-  $user;
+  $user = FALSE;
 //  if ($username == $_POST['username'] && $password == $_POST['password']) {
   if(preg_match('/[[:alnum:]_\-\.]{3,25}/', $username) === 1){
 	if(preg_match('/[[:alnum:]_\-\.]{3,50}/', $password) === 1){
