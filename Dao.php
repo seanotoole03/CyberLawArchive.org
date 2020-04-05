@@ -67,7 +67,7 @@ class Dao {
 	try {
 	  $stmt = $conn->prepare("SELECT * FROM Users WHERE username='{$username}' AND password='{$password}'");
 	  $stmt->execute();
-	  return $stmt;
+	  //return $stmt;
 	  if($stmt->fetch() === FALSE) {
 		return FALSE;
 	  } else {
