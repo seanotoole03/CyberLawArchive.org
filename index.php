@@ -45,7 +45,7 @@
 			<a class="logo" href="index.php"> <logo-text> Cyber Law Archive </logo-text> </a>
 			<ul class="user-interaction"> 
 				<?php
-					if (isset($_SESSION['errors'])) { echo "<b> $_SESSION['errors'][0] </b>";
+					if (isset($_SESSION['errors'])) { echo "<b> {$_SESSION['errors'][0]} </b>";
 					  ?> <script> openLogin() </script> <?php	
 					} unset($_SESSION['user']); ?>
 				<?php 
