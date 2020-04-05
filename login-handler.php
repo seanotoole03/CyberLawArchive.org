@@ -8,7 +8,6 @@
   //$username = 'seano';
   //$password = 'Postgres.Admiral1'
   $user;
-  
 //  if ($username == $_POST['username'] && $password == $_POST['password']) {
   if(preg_match('/[[:alnum:]_\-\.]{3,25}/', $username) === 1){
 	if(preg_match('/[[:alnum:]_\-\.]{3,50}/', $password) === 1){
@@ -22,8 +21,8 @@
   if($user != FALSE){
     $_SESSION['auth'] = TRUE;
 	$_SESSION['user'] = $username;	
-	$_COOKIE['user'] = $username;
-	$_COOKIE['permissions'] = $user->fetch()['permissions'];
+	setcookie('user', $username);
+	setcookie('permissions', $user->fetch()['permissions']);
 	unset($_SESSION['errors']);
 	unset($_SESSION['form']);
     header("Location: https://young-bayou-40048.herokuapp.com/index.php");
