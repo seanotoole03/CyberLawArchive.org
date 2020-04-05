@@ -6,6 +6,14 @@
 	}
 	require_once("Dao.php");
 	$dao = new Dao();
+	
+	$name_preset = "";
+	$comment_preset = "";
+	if (isset($_SESSION['form'])) {
+		$name_preset = $_SESSION['form']['username'];
+		$pass_preset = $_SESSION['form']['password'];
+	}
+	
 ?>
 
 
@@ -20,24 +28,8 @@
 		<meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport" />
 		<link href="style.css" rel="stylesheet" />
 		<link href="resources/cyber-law.png" type="image/png" rel="shortcut icon" />
-		<script>
+		<script src="js/functions.js"></script>
 
-			function openLogin() {
-			  document.getElementById('login').style.display = "block";
-			}
-
-			function closeLogin() {
-			  document.getElementById('login').style.display = "none";
-			}
-			
-			function openSignUp() {
-			  document.getElementById('signUp').style.display = "block";
-			}
-
-			function closeSignUp() {
-			  document.getElementById('signUp').style.display = "none";
-			}
-		</script>
 	</head>
 <!--	<header> CyberLawArchive.org </header> -->
 	<body>
@@ -46,6 +38,10 @@
 			title="clip art cyber law image from online public domain source"/> </a>
 			<a class="logo" href="index.php"> <logo-text> Cyber Law Archive </logo-text> </a>
 			<ul class="user-interaction"> 
+				<?php
+					if (isset($_SESSION['errors'])) {
+					  openLogin();	
+					} ?>
 				<?php 
 					if(isset($_SESSION["username"])){
 				?>
@@ -66,10 +62,16 @@
 				<h1>Login</h1>
 
 				<label for="username"><b>Username</b></label>
-				<input type="text" placeholder="Enter Username" name="username" required>
-
+				<input type="text" value="<?php echo $name_preset; ?>" placeholder="Enter Username" name="username" required>
+				<?php
+					if (isset($_SESSION['errors'])) {
+					  foreach ($_SESSION['errors'] as $error) {
+						echo "<div class='error'>{$error}<span class='close_error'>X</span></div>";
+					  }
+					  unset($_SESSION['errors']);
+					} ?>
 				<label for="password"><b>Password</b></label>
-				<input type="password" placeholder="Enter Password" name="password" required>
+				<input type="password" value="<?php echo $pass_preset; ?>" placeholder="Enter Password" name="password" required>
 
 				<button type="submit" class="btn">Login</button>
 				<button type="button" class="btn cancel" onclick="closeLogin()">Close</button>

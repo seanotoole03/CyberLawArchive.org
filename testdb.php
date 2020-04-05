@@ -38,6 +38,7 @@
 		}
 		
 		$stmt = $dao->testUserDB();
+		echo print_r($stmt->fetchAll());
 	?>
 	</p>
 	</body>

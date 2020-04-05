@@ -10,15 +10,42 @@
   $user;
   
 //  if ($username == $_POST['username'] && $password == $_POST['password']) {
-  $user = $dao->getLogin($username, $password); 	
+  if(preg_match('[[:alnum:]_\-\.]{3,25}', $username) === 1){
+	if(preg_match('[[:alnum:]_\-\.]{3,50}', $password) === 1){
+	  $user = $dao->getLogin($username, $password); 
+	}	
+  } /*else {
+	if(strlen($username) > 25 || strlen($username) < 3){
+		$errors[] = "Error, username 
+	}
+  } */
   if($user != FALSE){
     $_SESSION['auth'] = true;
-	$_SESSION['user'] = $user;
+	$_SESSION['user'] = $username;
     header("Location: https://young-bayou-40048.herokuapp.com/index.php");
     exit;
   }else{
     $_SESSION['auth'] = FALSE;
     $_SESSION['message'] = "Invalid username or password";
-    header("Location: https://young-bayou-40048.herokuapp.com/index.php");
+	$errors = array();
+	$errors[]="Invalid username or password.";
+    // validate
+	
+	if (0 < count($errors)) {
+		$_SESSION['form'] = $_POST;
+		$_SESSION['errors'] = $errors;
+		header("Location: https://young-bayou-40048.herokuapp.com/index.php");
+		exit;
+    }
+
   }
+  
+  	
+  unset($_SESSION['form']);
+
+  require_once 'Dao.php';
+  $dao = new Dao();
+  $dao->saveComment($_POST['comment'], $relative_path);
+  header("Location: https://young-bayou-40048.herokuapp.com/index.php");
+  exit;
 ?>
