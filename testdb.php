@@ -39,9 +39,10 @@
 		
 		$stmt = $dao->testUserDB();
 		echo print_r($stmt->fetchAll());
-		$testRes = $dao->getLogin('seano','Postgres.Admiral1');
-		echo print($testRes);
-		//echo print_r($testRes->fetchAll());
+		$user = 'seano'; $pass='Postgres.Admiral1';
+		$testRes = $dao->getLogin($user,$pass);
+		echo print_r($testRes->fetchAll());
+		echo print("SELECT * FROM Users WHERE username='{$user}' AND password='{$pass}'");
 	?>
 	</p>
 	</body>
