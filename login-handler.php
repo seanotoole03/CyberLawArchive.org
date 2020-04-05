@@ -27,6 +27,7 @@
   }else{
     $_SESSION['auth'] = FALSE;
     $_SESSION['message'] = "Invalid username or password";
+	unset($_SESSION['user']);
 	$errors = array();
 	$errors[]="Invalid username or password.";
     // validate
@@ -45,7 +46,6 @@
 
   require_once 'Dao.php';
   $dao = new Dao();
-  $dao->saveComment($_POST['comment'], $relative_path);
   header("Location: https://young-bayou-40048.herokuapp.com/index.php");
   exit;
 ?>
