@@ -46,7 +46,7 @@
 			<ul class="user-interaction"> 
 				<?php
 					if (isset($_SESSION['errors'])) {
-					  ?> <script> $( document ).ready(openLogin()); </script> <?php	
+					  ?> <script> openLogin(); </script> <?php	
 					} unset($_SESSION['user']); ?>
 				<?php 
 					if(isset($_SESSION['user']) && $_SESSION['auth'] === true){
