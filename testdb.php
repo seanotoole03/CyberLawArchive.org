@@ -39,6 +39,8 @@
 		
 		$stmt = $dao->testUserDB();
 		echo print_r($stmt->fetchAll());
+		$testRes = $dao->getLogin('seano','Postgres.Admiral1');
+		echo print_r($testRes->fetchAll());
 	?>
 	</p>
 	</body>
