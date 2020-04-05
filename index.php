@@ -68,10 +68,10 @@
 				<h1>Login</h1>
 
 				<label for="username"><b>Username</b></label>
-				<input type="text" value="<?php echo $signUp_name_preset; ?>" placeholder="Enter Username" name="username" required>
+				<input type="text" value="<?php echo $name_preset; ?>" placeholder="Enter Username" name="username" required>
 		
 				<label for="password"><b>Password</b></label>
-				<input type="password" value="<?php echo $signUp_pass_preset; ?>" placeholder="Enter Password" name="password" required>
+				<input type="password" value="<?php echo $pass_preset; ?>" placeholder="Enter Password" name="password" required>
 				
 				<?php
 					if (isset($_SESSION['errors'])) {
