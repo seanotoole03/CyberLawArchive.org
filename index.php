@@ -45,7 +45,7 @@
 			<ul class="user-interaction"> 
 				<?php
 					if (isset($_SESSION['errors'])) {
-					  ?> openLogin() <?php	
+					  ?> <script>openLogin()</script> <?php	
 					} ?>
 				<?php 
 					if(isset($_SESSION["username"])){

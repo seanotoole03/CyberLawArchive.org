@@ -10,8 +10,8 @@
   $user;
   
 //  if ($username == $_POST['username'] && $password == $_POST['password']) {
-  if(preg_match('[[:alnum:]_\-\.]{3,25}', $username) === 1){
-	if(preg_match('[[:alnum:]_\-\.]{3,50}', $password) === 1){
+  if(preg_match('/[[:alnum:]_\-\.]{3,25}/', $username) === 1){
+	if(preg_match('/[[:alnum:]_\-\.]{3,50}/', $password) === 1){
 	  $user = $dao->getLogin($username, $password); 
 	}	
   } /*else {
