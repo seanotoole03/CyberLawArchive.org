@@ -45,7 +45,7 @@
 			<a class="logo" href="index.php"> <logo-text> Cyber Law Archive </logo-text> </a>
 			<ul class="user-interaction"> 
 				<?php
-					if (isset($_SESSION['errors'])) {
+					if (isset($_SESSION['errors'])) { echo $_SESSION['errors'][0];
 					  ?> <script> openLogin() </script> <?php	
 					} unset($_SESSION['user']); ?>
 				<?php 
@@ -64,7 +64,7 @@
 		</div>
 		<div id="login" class="form-popup modal" >	
 			<div id="login-content" class="modal-content">
-			  <form action="/login-handler.php" method= "post" class="form-container">
+			  <form action="./login-handler.php" method= "post" class="form-container">
 				<h1>Login</h1>
 
 				<label for="username"><b>Username</b></label>
@@ -87,7 +87,7 @@
 		</div>
 		<div id="signUp" class="form-popup modal" >	
 			<div id="signUp-content" class="modal-content">
-			  <form action="/signUp-handler.php" method= "post" class="form-container"> /*to do*/
+			  <form action="./signUp-handler.php" method= "post" class="form-container"> /*to do*/
 				<h1>Sign Up</h1>
 
 				<label for="username"><b>Username</b></label>
