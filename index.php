@@ -54,7 +54,7 @@
 					<li class="user-interaction"> User: <?php echo $_SESSION['user'] ?> </li>
 					<li class="user-interaction"><a class="nav-link" href="./logout.php"> Logout </a></li>
 					<?php }else{ ?>
-					<li class="user-interaction"> Form: <?php echo print_r($_SESSION) ?> </li>
+					<li class="user-interaction"> Form: <?php echo print_r($_SESSION); echo print($_SESSION['message']) ?> </li>
 					<li class="user-interaction"><a class="nav-link" href="#" onclick="openLogin()">  Login </a></li>
 					<li class="user-interaction"><a class="nav-link"  href="#" onclick="openSignUp()"> Sign Up </a></li>
 				<?php } ?>
