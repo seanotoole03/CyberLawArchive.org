@@ -22,6 +22,8 @@
   if($user != FALSE){
     $_SESSION['auth'] = true;
 	$_SESSION['user'] = $username;
+	unset($_SESSION['errors']);
+	unset($_SESSION['form']);
     header("Location: https://young-bayou-40048.herokuapp.com/index.php");
     exit;
   }else{

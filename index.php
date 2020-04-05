@@ -33,7 +33,7 @@
 		<meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport" />
 		<link href="style.css" rel="stylesheet" />
 		<link href="resources/cyber-law.png" type="image/png" rel="shortcut icon" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/functions.js"></script>
 
 	</head>
@@ -46,7 +46,7 @@
 			<ul class="user-interaction"> 
 				<?php
 					if (isset($_SESSION['errors']) && $_SESSION['auth'] === false) {
-					  ?> <script> openLogin(); </script> <?php	
+					  ?> <script> openLogin() </script> <?php	
 					} unset($_SESSION['user']); ?>
 				<?php 
 					if(isset($_SESSION['user']) && $_SESSION['auth'] === true){
@@ -54,6 +54,7 @@
 					<li class="user-interaction"> User: <?php echo $_SESSION['user'] ?> </li>
 					<li class="user-interaction"><a class="nav-link" href="./logout.php"> Logout </a></li>
 					<?php }else{ ?>
+					<li class="user-interaction"> Form: <?php echo print_r($_SESSION['form']) ?> </li>
 					<li class="user-interaction"><a class="nav-link" href="#" onclick="openLogin()">  Login </a></li>
 					<li class="user-interaction"><a class="nav-link"  href="#" onclick="openSignUp()"> Sign Up </a></li>
 				<?php } ?>
