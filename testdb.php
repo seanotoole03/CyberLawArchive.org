@@ -37,12 +37,19 @@
 		 echo $e->getMessage();
 		}
 		
+		/*
 		$stmt = $dao->testUserDB();
 		echo print_r($stmt->fetch());
 		$user = 'seano'; $pass='Postgres.Admiral1';
 		$testRes = $dao->getLogin($user,$pass);
 		echo print_r($testRes->fetch(PDO::FETCH_ASSOC));
-		//echo print("SELECT * FROM Users WHERE username='{$user}' AND password='{$pass}'");
+		//echo print("SELECT * FROM Users WHERE username='{$user}' AND password='{$pass}'");*/
+		$testAdd = $dao->createUser('testu','password','email.email');
+		echo print($testAdd);
+		if($testAdd){
+		  $testDelete = $dao->deleteUser('testu','password');
+		  echo print($testDelete);
+		}
 	?>
 	</p>
 	</body>
