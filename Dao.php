@@ -75,7 +75,7 @@ class Dao {
 	  date_default_timezone_set('America/Denver');
 	  $date = date('Y/m/d', time());	
 	  $stmt = $conn->prepare("INSERT INTO Users(username, password, email, join_date, permissions) 
-		VALUES ({$username},{$password},{$email},{$date},0)";
+		VALUES ({$username},{$password},{$email},{$date},0)");
 	  $result = $stmt->execute();
 	  return $result;
 	} catch(Exception $e) {
