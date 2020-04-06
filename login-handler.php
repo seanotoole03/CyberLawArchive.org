@@ -19,6 +19,7 @@
 	}
   } */
   if($user != FALSE){
+	
     $_SESSION['auth'] = TRUE;
 	$_SESSION['user'] = $username;	
 //	setcookie('user', $username);
@@ -28,6 +29,8 @@
     header("Location: https://young-bayou-40048.herokuapp.com/index.php");
     exit;
   }else{
+	unset($_SESSION['signup']);
+	$_SESSION['login'] = TRUE;
     $_SESSION['auth'] = FALSE;
     $_SESSION['message'] = "Invalid username or password";
 	unset($_SESSION['user']);

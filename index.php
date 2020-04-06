@@ -14,9 +14,14 @@
 	$signUp_email_preset = "";
 	
 	if (isset($_SESSION['form'])) {
-		$name_preset = $_SESSION['form']['username'];
-		$pass_preset = $_SESSION['form']['password'];
-		// INCLUDE SEPARATE PRESETS FOR SIGNUP
+		if(isset($_SESSION['login']){
+			$name_preset = $_SESSION['form']['username'];
+			$pass_preset = $_SESSION['form']['password'];
+		} else if(isset($_SESSION['signup'])){
+			$signUp_name_preset = $_SESSION['form']['username'];
+			$signUp_pass_preset = $_SESSION['form']['password'];
+			$signUp_email_preset = $_SESSION['form']['email'];
+		}
 	}
 	
 ?>

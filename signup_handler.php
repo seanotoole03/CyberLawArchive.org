@@ -9,7 +9,9 @@
   $email = $_POST["email"];
   
   if(strcmp($password, $confirm_password) != 0){
-	$errors[] = "Passwords do not match.";  
+	$errors[] = "Passwords do not match.";
+	unset($_SESSION['login']);
+	$_SESSION['signup'] = TRUE;
 	$_SESSION['auth'] = FALSE;
 	$_SESSION['form'] = $_POST;
 	$_SESSION['errors'] = $errors;
