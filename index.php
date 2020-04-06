@@ -48,7 +48,7 @@
 				<?php
 					if (isset($_SESSION['errors'])) { //echo "<b> {$_SESSION['errors'][0]} </b>";
 					  ?> <script> $(document).ready((openLogin()); </script> <?php	
-					} unset($_SESSION['user']); ?>
+					unset($_SESSION['user']);} ?>
 				<?php 
 					if(isset($_SESSION['user'])){
 				?>
