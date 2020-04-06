@@ -18,6 +18,7 @@ class Dao {
 	$pdo;  
     $params = parse_ini_file('database.ini');
 	if ($params === false) {
+		 $this->logger->LogError("Error reading database configuration file");
 		throw new \Exception("Error reading database configuration file");
 	}
 	print_r($params);
@@ -42,22 +43,6 @@ class Dao {
     return $pdo;
   }
   
-  public function testUserDB() {
-	$conn = $this->getConnection();
-	if(is_null($conn)) {
-	  $this->logger->LogError("Couldn't connect to the database.");
-      return;
-    }
-	try {
-	  $stmt = $conn->prepare('SELECT * FROM Users');
-	  $stmt->execute();
-	  return $stmt;
-	} catch(Exception $e) {
-      echo print_r($e,1);
-      exit;
-    }
-  }
-  
   public function getLogin($username, $password) {
 	$conn = $this->getConnection();
 	if(is_null($conn)) {
@@ -80,6 +65,50 @@ class Dao {
     }  
   }
   
+  public function createUser($username, $password, $email) {
+	$conn = $this->getConnection();
+	if(is_null($conn)) {
+	  $this->logger->LogError("Couldn't connect to the database.");
+      return;
+    }
+	try {
+	  date_default_timezone_set('America/Denver');
+	  $date = date('m/d/Y h:i:s a', time());	
+	  $stmt = $conn->prepare("INSERT INTO Users(username, password, email, join_date, permissions) 
+		VALUES ({$username},{$password},{$email},{$date},0");
+	  $result = $stmt->execute();
+	  return $result;
+	} catch(Exception $e) {
+	  $this->logger->LogError("Couldn't connect to the database: " . $e->getMessage());
+      echo print_r($e,1);
+      exit;
+    }  
+  }
+  
+  public function deleteUser($username, $password) {
+	$conn = $this->getConnection();
+	if(is_null($conn)) {
+	  $this->logger->LogError("Couldn't connect to the database.");
+      return;
+    }
+	try {	
+	  $stmt = $conn->prepare("DELETE FROM Users WHERE username='{$username}' AND password='{$password}'");
+	  $stmt->execute();
+	  //return $stmt;
+	  if($stmt->fetch() === FALSE) {
+		return FALSE;
+	  } else {
+		return $stmt;
+	  }
+	} catch(Exception $e) {
+	  $this->logger->LogError("Couldn't connect to the database: " . $e->getMessage());
+      echo print_r($e,1);
+      exit;
+    }  
+  }
+  
+  
+/**  
   public function getUsers() {
     $conn = $this->getConnection();
     if(is_null($conn)) {
@@ -93,7 +122,7 @@ class Dao {
     }
   }  
 
-/**
+
   public function getComments() {
     $conn = $this->getConnection();
     if(is_null($conn)) {

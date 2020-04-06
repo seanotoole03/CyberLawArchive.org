@@ -44,7 +44,6 @@
 			title="clip art cyber law image from online public domain source"/> </a>
 			<a class="logo" href="index.php"> <logo-text> Cyber Law Archive </logo-text> </a>
 			<ul class="user-interaction"> 
-			<li class="user-interaction"> Session: <?php echo print_r($_SESSION) ?> </li>
 				<?php
 					if (isset($_SESSION['errors'])) { //echo "<b> {$_SESSION['errors'][0]} </b>";
 					  ?> <script> $(document).ready((openLogin()); </script> <?php	
@@ -87,17 +86,17 @@
 		</div>
 		<div id="signUp" class="form-popup modal" >	
 			<div id="signUp-content" class="modal-content">
-			  <form action="./signUp-handler.php" method= "post" class="form-container"> /*to do*/
+			  <form action="./signup-handler.php" method= "post" class="form-container">
 				<h1>Sign Up</h1>
 
 				<label for="username"><b>Username</b></label>
 				<input type="text" value="<?php echo $signUp_name_preset; ?>" placeholder="Enter Username" name="username" required>
 
 				<label for="password"><b>Password</b></label>
-				<input type="password" placeholder="Enter New Password" name="password" required>
+				<input type="password" value="<?php echo $signUp_pass_preset; ?>"  placeholder="Enter New Password" name="password" required>
 				
 				<label for="password"><b>Password</b></label>
-				<input type="password" value="<?php echo $signUp_pass_preset; ?>" placeholder="Confirm New Password" name="password" required>
+				<input type="password" placeholder="Confirm New Password" name="password2" required>
 				
 				<label for="email"><b>Email Address</b></label>
 				<input type="text" value="<?php echo $signUp_email_preset; ?>" placeholder="Enter Contact Email Address" name="email" required>
