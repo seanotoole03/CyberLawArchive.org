@@ -86,7 +86,7 @@
 		</div>
 		<div id="signUp" class="form-popup modal" >	
 			<div id="signUp-content" class="modal-content">
-			  <form action="./signup-handler.php" method= "post" class="form-container">
+			  <form action="./signup_handler.php" method= "post" class="form-container">
 				<h1>Sign Up</h1>
 
 				<label for="username"><b>Username</b></label>
