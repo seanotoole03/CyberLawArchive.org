@@ -14,7 +14,7 @@
 	$signUp_email_preset = "";
 	
 	if (isset($_SESSION['form'])) {
-		if(isset($_SESSION['login']){
+		if(isset($_SESSION['login'])){
 			$name_preset = $_SESSION['form']['username'];
 			$pass_preset = $_SESSION['form']['password'];
 		} else if(isset($_SESSION['signup'])){
