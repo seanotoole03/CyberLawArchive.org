@@ -44,6 +44,7 @@
 			title="clip art cyber law image from online public domain source"/> </a>
 			<a class="logo" href="index.php"> <logo-text> Cyber Law Archive </logo-text> </a>
 			<ul class="user-interaction"> 
+			<li class="user-interaction"> Session: <?php echo print_r($_SESSION) ?> </li>
 				<?php
 					if (isset($_SESSION['errors'])) { //echo "<b> {$_SESSION['errors'][0]} </b>";
 					  ?> <script> $(document).ready((openLogin()); </script> <?php	
