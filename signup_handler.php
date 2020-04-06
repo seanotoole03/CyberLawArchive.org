@@ -10,6 +10,9 @@
   
   if(strcmp($password, $confirm_password) != 0){
 	$errors[] = "Passwords do not match.";  
+	$_SESSION['auth'] = FALSE;
+	header("Location: https://young-bayou-40048.herokuapp.com/index.php");
+	exit;
   }
   
   if(preg_match('/[[:alnum:]_\-\.]{3,25}/', $username) === 1){
