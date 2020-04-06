@@ -46,10 +46,10 @@
 		//echo print("SELECT * FROM Users WHERE username='{$user}' AND password='{$pass}'");*/
 		$testAdd = $dao->createUser('testu','password','email.email');
 		echo print($testAdd);
-		if($testAdd){
+		/*if($testAdd){
 		  $testDelete = $dao->deleteUser('testu','password');
 		  echo print($testDelete);
-		}
+		}*/
 	?>
 	</p>
 	</body>
