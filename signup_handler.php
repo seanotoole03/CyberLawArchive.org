@@ -11,6 +11,8 @@
   if(strcmp($password, $confirm_password) != 0){
 	$errors[] = "Passwords do not match.";  
 	$_SESSION['auth'] = FALSE;
+	$_SESSION['form'] = $_POST;
+	$_SESSION['errors'] = $errors;
 	header("Location: https://young-bayou-40048.herokuapp.com/index.php");
 	exit;
   }
