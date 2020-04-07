@@ -79,7 +79,7 @@
 				<input type="password" value="<?php echo $pass_preset; ?>" placeholder="Enter Password" name="password" required>
 				
 				<?php
-					if (isset($_SESSION['errors'])) {
+					if (isset($_SESSION['errors']) && isset($_SESSION['login'])) {
 					  foreach ($_SESSION['errors'] as $error) {
 						echo "<div class='error'>{$error}</div>";
 					  }
@@ -107,7 +107,7 @@
 				<label for="email"><b>Email Address</b></label>
 				<input type="text" value="<?php echo $signUp_email_preset; ?>" placeholder="Enter Contact Email Address" name="email" required>
 				<?php
-					if (isset($_SESSION['errors'])) {
+					if (isset($_SESSION['errors'])&& isset($_SESSION['signup'])) {
 					  foreach ($_SESSION['errors'] as $error) {
 						echo "<div class='error'>{$error}</div>";
 					  }
