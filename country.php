@@ -12,14 +12,79 @@
 <!--	<header> CyberLawArchive.org </header> -->
 	<body>
 		<div class="top-window">
-			<a class="img" href="index.php"> <img class="logo" src="resources/cyber-law.png" alt="a gavel in front of a laptop screen"
-			title="clip art cyber law image from online public domain source"/> </a>
-			<a class="logo" href="index.php"> <logo-text> Cyber Law Archive </logo-text> </a>
-			<ul class="user-interaction"> 
-				<li class="user-interaction"><a class="nav-link" href="./login.php"> Login </a></li>
-				<li class="user-interaction"><a class="nav-link"  href="./login.php"> Sign Up </a></li>
-				<li class="user-interaction"><a class="nav-link"  href="./contact.php"> Contact Us </a></li>
-			</ul>
+			<div class= "top-background country">
+				<a class="img" href="index.php"> <img class="logo" src="resources/cyber-law.png" alt="a gavel in front of a laptop screen"
+				title="clip art cyber law image from online public domain source"/> </a>
+				<a class="logo" href="index.php"> <logo-text> Cyber Law Archive </logo-text> </a>
+				<ul class="user-interaction"> 
+					<?php
+						if (isset($_SESSION['errors'])) { //echo "<b> {$_SESSION['errors'][0]} </b>";
+						  ?> <script> $(document).ready((openLogin()); </script> <?php	
+						unset($_SESSION['user']);} ?>
+					<?php 
+						if(isset($_SESSION['user'])){
+					?>
+						<li class="user-interaction"> User: <?php echo $_SESSION['user'] ?> </li>
+						<li class="user-interaction"><a class="nav-link" href="./logout.php"> Logout </a></li>
+						<?php }else{ ?>
+						<li class="user-interaction"><a class="nav-link" href="#" onclick="openLogin()">  Login </a></li>
+						<li class="user-interaction"><a class="nav-link"  href="#" onclick="openSignUp()"> Sign Up </a></li>
+					<?php } ?>
+
+					<li class="user-interaction"><a class="nav-link"  href="./contact.php"> Contact Us </a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="login" class="form-popup modal" >	
+			<div id="login-content" class="modal-content">
+			  <form action="./login-handler.php" method= "post" class="form-container">
+				<h1>Login</h1>
+
+				<label for="username"><b>Username</b></label>
+				<input type="text" value="<?php echo $name_preset; ?>" placeholder="Enter Username" name="username" required>
+		
+				<label for="password"><b>Password</b></label>
+				<input type="password" value="<?php echo $pass_preset; ?>" placeholder="Enter Password" name="password" required>
+				
+				<?php
+					if (isset($_SESSION['errors'])) {
+					  foreach ($_SESSION['errors'] as $error) {
+						echo "<div class='error'>{$error}</div>";
+					  }
+					  unset($_SESSION['errors']);
+					} ?>	
+				<button type="submit" class="btn">Login</button>
+				<button type="button" class="btn cancel" onclick="closeLogin()">Close</button>
+			  </form>
+			</div>
+		</div>
+		<div id="signUp" class="form-popup modal" >	
+			<div id="signUp-content" class="modal-content">
+			  <form action="./signup_handler.php" method= "post" class="form-container">
+				<h1>Sign Up</h1>
+
+				<label for="username"><b>Username</b></label>
+				<input type="text" value="<?php echo $signUp_name_preset; ?>" placeholder="Enter Username" name="username" required>
+
+				<label for="password"><b>Password</b></label>
+				<input type="password" value="<?php echo $signUp_pass_preset; ?>"  placeholder="Enter New Password" name="password" required>
+				
+				<label for="password"><b>Password</b></label>
+				<input type="password" placeholder="Confirm New Password" name="password2" required>
+				
+				<label for="email"><b>Email Address</b></label>
+				<input type="text" value="<?php echo $signUp_email_preset; ?>" placeholder="Enter Contact Email Address" name="email" required>
+				<?php
+					if (isset($_SESSION['errors'])) {
+					  foreach ($_SESSION['errors'] as $error) {
+						echo "<div class='error'>{$error}</div>";
+					  }
+					  unset($_SESSION['errors']);
+					} ?>	
+				<button type="submit" class="btn">Register</button>
+				<button type="button" class="btn cancel" onclick="closeSignUp()">Close</button>
+			  </form>
+			</div>
 		</div>
 		<div class="nav-bar">
 			<hr/>

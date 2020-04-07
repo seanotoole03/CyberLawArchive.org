@@ -139,6 +139,32 @@ div.top-window {
 	position: relative;
 }
 
+div.top-background {
+	width: 100%;
+	height: 100%;
+	opacity: .5;
+}
+
+div.top-background.index {
+	background-image: url("./resources/index.jpg");
+}
+
+div.top-background.intl {
+	background-image: url("./resources/intl_globe.jpg");
+}
+
+div.top-background.country {
+	background-image: url("./resources/world-flag-map.jpg");
+}
+
+div.top-background.resources {
+	background-image: url("./resources/resources.jpg");
+}
+
+div.top-background.country {
+	background-image: url("./resources/index.jpg");
+}
+
 div.nav-bar {
 	background-color: white;
 	text-align:center;
