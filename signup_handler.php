@@ -44,6 +44,8 @@
     header("Location: https://young-bayou-40048.herokuapp.com/index.php");
     exit;
   }else{
+	unset($_SESSION['login']);
+	$_SESSION['signup'] = TRUE;
     $_SESSION['auth'] = FALSE;
     $_SESSION['message'] = "Error, user not created";
 	unset($_SESSION['user']);
