@@ -45,28 +45,27 @@
 <!--	<header> CyberLawArchive.org </header> -->
 	<body>
 		<div class="top-window">
-			<div class="top-background index">
-				<a class="img" href="index.php"> <img class="logo" src="resources/cyber-law.png" alt="a gavel in front of a laptop screen"
-				title="clip art cyber law image from online public domain source"/> </a>
-				<a class="logo" href="index.php"> <logo-text> Cyber Law Archive </logo-text> </a>
-				<ul class="user-interaction"> 
-					<?php
-						if (isset($_SESSION['errors'])) { //echo "<b> {$_SESSION['errors'][0]} </b>";
-						  ?> <script> $(document).ready((openLogin()); </script> <?php	
-						unset($_SESSION['user']);} ?>
-					<?php 
-						if(isset($_SESSION['user'])){
-					?>
-						<li class="user-interaction"> User: <?php echo $_SESSION['user'] ?> </li>
-						<li class="user-interaction"><a class="nav-link" href="./logout.php"> Logout </a></li>
-						<?php }else{ ?>
-						<li class="user-interaction"><a class="nav-link" href="#" onclick="openLogin()">  Login </a></li>
-						<li class="user-interaction"><a class="nav-link"  href="#" onclick="openSignUp()"> Sign Up </a></li>
-					<?php } ?>
+			<span class="top-background index"></span>
+			<a class="img" href="index.php"> <img class="logo" src="resources/cyber-law.png" alt="a gavel in front of a laptop screen"
+			title="clip art cyber law image from online public domain source"/> </a>
+			<a class="logo" href="index.php"> <logo-text> Cyber Law Archive </logo-text> </a>
+			<ul class="user-interaction"> 
+				<?php
+					if (isset($_SESSION['errors'])) { //echo "<b> {$_SESSION['errors'][0]} </b>";
+					  ?> <script> $(document).ready((openLogin()); </script> <?php	
+					unset($_SESSION['user']);} ?>
+				<?php 
+					if(isset($_SESSION['user'])){
+				?>
+					<li class="user-interaction"> User: <?php echo $_SESSION['user'] ?> </li>
+					<li class="user-interaction"><a class="nav-link" href="./logout.php"> Logout </a></li>
+					<?php }else{ ?>
+					<li class="user-interaction"><a class="nav-link" href="#" onclick="openLogin()">  Login </a></li>
+					<li class="user-interaction"><a class="nav-link"  href="#" onclick="openSignUp()"> Sign Up </a></li>
+				<?php } ?>
 
-					<li class="user-interaction"><a class="nav-link"  href="./contact.php"> Contact Us </a></li>
-				</ul>
-			</div>
+				<li class="user-interaction"><a class="nav-link"  href="./contact.php"> Contact Us </a></li>
+			</ul>
 		</div>
 		<div id="login" class="form-popup modal" >	
 			<div id="login-content" class="modal-content">
