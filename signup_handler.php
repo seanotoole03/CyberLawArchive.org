@@ -21,13 +21,17 @@
   
   if(preg_match('/[[:alnum:]_\-\.]{3,25}/', $username) === 1){
 	if(preg_match('/[[:alnum:]_\-\.]{3,50}/', $password) === 1){
-	  $user = $dao->createUser($username, $password, $email); 
+		if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+			$user = $dao->createUser($username, $password, $email); 
+		}
 	}	
   } else {
 	if(strlen($username) > 25 || strlen($username) < 3){
 		$errors[] = "Error, username should be within 3-25 alphanumeric characters"; 
 	} else if(strlen($password) > 50 || strlen($password) < 3) {
 		$errors[] = "Error, password should be within 3-50 alphanumeric characters"; 
+	} else if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+		$errors[] = "Error, invalid email address format or charset. Should use standard alphanumeric characters and ___@___.__ format";
 	} else {
 		$errors[] = "Error, username and password should only contain alphanumeric characters, and/or '_', '-', '.' symbols"; 
 	}

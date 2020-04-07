@@ -140,26 +140,31 @@ div.top-window {
 }
 
 div.top-background {
-	opacity: .5;
+
 }
 
 div.top-background.index {
+	opacity: .5;
 	background-image: url("./resources/index.jpg");
 }
 
 div.top-background.intl {
+	opacity: .5;
 	background-image: url("./resources/intl_globe.jpg");
 }
 
 div.top-background.country {
+	opacity: .5;
 	background-image: url("./resources/world-flag-map.jpg");
 }
 
 div.top-background.resources {
+	opacity: .5;
 	background-image: url("./resources/resources.jpg");
 }
 
-div.top-background.country {
+div.top-background.about {
+	opacity: .5;
 	background-image: url("./resources/index.jpg");
 }
 
