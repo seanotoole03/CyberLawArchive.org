@@ -139,31 +139,32 @@ div.top-window {
 	position: relative;
 }
 
-div.top-background {
-
+span.top-background {
+	width:100%;
+	height:100%;
 }
 
-div.top-background.index {
+span.top-background.index {
 	opacity: .5;
 	background-image: url("./resources/index.jpg");
 }
 
-div.top-background.intl {
+span.top-background.intl {
 	opacity: .5;
 	background-image: url("./resources/intl_globe.jpg");
 }
 
-div.top-background.country {
+span.top-background.country {
 	opacity: .5;
 	background-image: url("./resources/world-flag-map.jpg");
 }
 
-div.top-background.resources {
+span.top-background.resources {
 	opacity: .5;
 	background-image: url("./resources/resources.jpg");
 }
 
-div.top-background.about {
+span.top-background.about {
 	opacity: .5;
 	background-image: url("./resources/index.jpg");
 }
