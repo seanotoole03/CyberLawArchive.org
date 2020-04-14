@@ -141,31 +141,31 @@ div.top-window {
 
 .top-background {
 	width:100%;
-	height:100%;
+	/*height:100%;*/
 }
 
 .top-background.index {
-	opacity: .5;
+	opacity: .25;
 	background-image: url("/resources/index.jpg");
 }
 
 .top-background.intl {
-	opacity: .5;
+	opacity: .25;
 	background-image: url("/resources/intl_globe.jpg");
 }
 
 .top-background.country {
-	opacity: .5;
+	opacity: .25;
 	background-image: url("/resources/world-flag-map.jpg");
 }
 
 .top-background.resources {
-	opacity: .5;
+	opacity: .25;
 	background-image: url("/resources/resources.jpg");
 }
 
 .top-background.about {
-	opacity: .5;
+	opacity: .25;
 	background-image: url("/resources/index.jpg");
 }
 
