@@ -147,26 +147,31 @@ div.top-window {
 .top-background.index {
 	opacity: .25;
 	background-image: url("/resources/index.jpg");
+	background-repeat: no-repeat;
 }
 
 .top-background.intl {
 	opacity: .25;
 	background-image: url("/resources/intl_globe.jpg");
+	background-repeat: no-repeat;
 }
 
 .top-background.country {
 	opacity: .25;
 	background-image: url("/resources/world-flag-map.jpg");
+	background-repeat: no-repeat;
 }
 
 .top-background.resources {
 	opacity: .25;
 	background-image: url("/resources/resources.jpg");
+	background-repeat: no-repeat;
 }
 
 .top-background.about {
 	opacity: .25;
 	background-image: url("/resources/index.jpg");
+	background-repeat: no-repeat;
 }
 
 div.nav-bar {
