@@ -12,7 +12,7 @@
 <!--	<header> CyberLawArchive.org </header> -->
 	<body>
 		<div class="top-window">
-			<span class= "top-background resources"> </span>
+			<div class= "top-background resources"> </div>
 				<a class="img" href="index.php"> <img class="logo" src="resources/cyber-law.png" alt="a gavel in front of a laptop screen"
 				title="clip art cyber law image from online public domain source"/> </a>
 				<a class="logo" href="index.php"> <logo-text> Cyber Law Archive </logo-text> </a>
