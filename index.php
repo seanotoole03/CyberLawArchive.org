@@ -38,6 +38,8 @@
 		<meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport" />
 		<link href="style.css" rel="stylesheet" />
 		<link href="resources/cyber-law.png" type="image/png" rel="shortcut icon" />
+		<link rel="stylesheet" href="editor.md/css/editormd.min.css" />
+		<script src="editor.md/editormd.min.js"></script>
 		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/functions.js"></script>
 
@@ -137,6 +139,20 @@
 				<li><p><b> This site exists to collect, compile, and serve as a backup storage for important documents related to cyber law
 					across recent history.</b></p></li>
 			</ul>
+			<div id="editor">
+				<!-- Tips: Editor.md can auto append a `<textarea>` tag -->
+				<textarea style="display:none;">### Hello Editor.md !</textarea>
+			</div>
+			<script type="text/javascript">
+				$(function() {
+					var editor = editormd("editor", {
+						// width: "100%",
+						// height: "100%",
+						// markdown: "xxxx",     // dynamic set Markdown text
+						path : "editor.md/lib/"  // Autoload modules mode, codemirror, marked... dependents libs path
+					});
+				});
+			</script>
 			</div>
 			<div class="column main side-panel">
 			<ul>

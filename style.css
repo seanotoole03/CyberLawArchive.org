@@ -156,6 +156,7 @@ div.top-window {
 	opacity: .25;
 	background-position: left;
 	width:100%;
+	height:100%;
 }
 
 #login {
@@ -167,7 +168,7 @@ div.top-window {
 }
 
 .top-background.index {
-	background-image: url("/resources/index.jpg");
+	background-image: linear-gradient(to right, rgba(ff, ff, ff, 0), rgba(ef, ef, ef, 1)), url('resources/index.jpg');
 	background-repeat: no-repeat;
 }
 
