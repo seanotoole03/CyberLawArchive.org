@@ -54,16 +54,11 @@ class Dao {
 	  $stmt = $conn->prepare("SELECT password FROM Users WHERE username='{$username}'");
 	  $stmt->execute();
 	  if(password_verify($password, ($stmt->fetch()[0]))){
-		$stmt = TRUE;  
+		return TRUE;  
 	  } else {
-		$stmt = FALSE;
-	  }
-	  //return $stmt;
-	  if($stmt === FALSE) {
 		return FALSE;
-	  } else {
-		return $stmt;
 	  }
+	  
 	} catch(Exception $e) {
 	  $this->logger->LogError("Couldn't connect to the database: " . $e->getMessage());
       echo print_r($e,1);
