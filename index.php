@@ -52,7 +52,7 @@
 			<ul class="user-interaction"> 
 				<?php
 					if (isset($_SESSION['errors'])) { //echo "<b> {$_SESSION['errors'][0]} </b>";
-					 ?> <script> $(window).on("load", openLogin()); </script> <?php
+					 ?> <script> $(window).on("load", function(){ openLogin(); }); </script> <?php
 					unset($_SESSION['user']);} ?>
 				<?php 
 					if(isset($_SESSION['user'])){

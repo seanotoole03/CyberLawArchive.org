@@ -5,6 +5,7 @@
   
   $username = $_POST["username"];
   $password = $_POST["password"];
+  $_COOKIE['test'] = 'testText';
   $_COOKIE['passhash'] = (password_hash($password, PASSWORD_DEFAULT));
   //$username = 'seano';
   //$password = 'Postgres.Admiral1'
