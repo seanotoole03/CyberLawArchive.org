@@ -30,7 +30,7 @@
     $_SESSION['message'] = "Invalid username or password";
 	unset($_SESSION['user']);
 	unset($_COOKIE['user']);
-	unset($_COOKIE);
+/*	unset($_COOKIE);*/
 	$errors = array();
 	$errors[]="Invalid username or password.";
     // validate
