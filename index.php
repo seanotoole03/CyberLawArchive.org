@@ -46,7 +46,7 @@
 	<body>
 		<div class="top-window">
 			<div class="top-background index"></div>
-							<?php	  /* TEST CODE, REMOVE LATER */
+				<?php	  /* TEST CODE, REMOVE LATER */
 					  if(isset($_SESSION['userArray'])){
 						 echo "<div class='error'>{$userArray}</div>";
 					  }
