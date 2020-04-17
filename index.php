@@ -46,10 +46,10 @@
 	<body>
 		<div class="top-background index">
 		<div class="top-window">
-			<a class="img" href="index.php"> <img class="logo" src="resources/cyber-law.png" alt="a gavel in front of a laptop screen"
+			<a class="img" href="index.php"> <img id="logo-img" class="logo" src="resources/cyber-law.png" alt="a gavel in front of a laptop screen"
 			title="clip art cyber law image from online public domain source"/> </a>
-			<a class="logo" href="index.php"> <logo-text> Cyber Law Archive </logo-text> </a>
-			<ul class="user-interaction"> 
+			<a id="logo-img" class="logo" href="index.php"> <logo-text> Cyber Law Archive </logo-text> </a>
+			<ul id="user-interaction" class="user-interaction"> 
 				<?php
 					if (isset($_SESSION['errors']) && isset($_SESSION['login'])) { //echo "<b> {$_SESSION['errors'][0]} </b>";
 					 ?> <script> $(window).on("load", function(){ openLogin(); }); </script> <?php

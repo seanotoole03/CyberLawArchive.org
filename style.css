@@ -23,6 +23,10 @@ p {
 	opacity: 1;
 }
 
+#user-interactions {
+	opacity: 1;
+}
+
 logo-text {
 	font-size: 40px;
 	font-family: "Lucida Console", monaco, monospace;
