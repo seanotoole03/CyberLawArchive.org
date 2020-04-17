@@ -22,8 +22,7 @@
   if(preg_match('/[[:alnum:]_\-\.]{3,50}/', $username) === 1){
 	if(preg_match('/[[:alnum:]_\-\.]{3,50}/', $password) === 1){
 		if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-			$user = $dao->createUser($username, (password_hash($password, PASSWORD_DEFAULT)), $email); 
-			$_SESSION['passhash'] = (password_hash($password, PASSWORD_DEFAULT));
+			$user = $dao->createUser($username, (password_hash($password, PASSWORD_DEFAULT)), $email);
 		}
 	}	
   } else {

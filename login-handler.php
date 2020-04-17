@@ -12,9 +12,7 @@
 //  if ($username == $_POST['username'] && $password == $_POST['password']) {
   if(preg_match('/[[:alnum:]_\-\.]{3,50}/', $username) === 1){
 	if(preg_match('/[[:alnum:]_\-\.]{3,50}/', $password) === 1){
-	  $user = $dao->getLogin($username, (password_hash($password, PASSWORD_DEFAULT)));
-	  $_SESSION['passhash'] = (password_hash($password, PASSWORD_DEFAULT));
-	  $_SESSION['hashtest'] = password_verify($password,(password_hash($password, PASSWORD_DEFAULT)));
+	  $user = $dao->getLogin($username, $password);
 	}	
   }
   
@@ -22,6 +20,7 @@
 	
     $_SESSION['auth'] = TRUE;
 	$_SESSION['user'] = $username;	
+	$_SESSION['userArray'] = $user;
 	unset($_SESSION['login']);
 	unset($_SESSION['signup']);
 	

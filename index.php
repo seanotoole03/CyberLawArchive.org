@@ -47,11 +47,8 @@
 		<div class="top-window">
 			<div class="top-background index"></div>
 							<?php	  /* TEST CODE, REMOVE LATER */
-					  if(isset($_SESSION['passhash'])){
-					  	echo "<div class='error'>{$_SESSION['passhash']}</div>";
-					  }
-					  if(isset($_SESSION['hashtest'])){
-					  	echo "<div class='error'>{$_SESSION['hashtest']}</div>";
+					  if(isset($_SESSION['userArray'])){
+						 echo "<div class='error'>"; print_r{$userArray}; echo "</div>";
 					  }
 					  /* TEST CODE END*/ ?>
 			<a class="img" href="index.php"> <img class="logo" src="resources/cyber-law.png" alt="a gavel in front of a laptop screen"
@@ -91,15 +88,6 @@
 					  foreach ($_SESSION['errors'] as $error) {
 						echo "<div class='error'>{$error}</div>";
 					  }
-					  
-					  /* TEST CODE, REMOVE LATER */
-					  if(isset($_SESSION['passhash'])){
-					  	echo "<div class='error'>{$_SESSION['passhash']}</div>";
-					  }
-					  if(isset($_SESSION['hashtest'])){
-					  	echo "<div class='error'>{$_SESSION['hashtest']}</div>";
-					  }
-					  /* TEST CODE END*/
 					  
 					  unset($_SESSION['errors']);				  
 					  
