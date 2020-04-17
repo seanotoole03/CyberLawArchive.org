@@ -51,7 +51,7 @@
 			<a class="logo" href="index.php"> <logo-text> Cyber Law Archive </logo-text> </a>
 			<ul class="user-interaction"> 
 				<?php
-					if (isset($_SESSION['errors'])) { //echo "<b> {$_SESSION['errors'][0]} </b>";
+					if (isset($_SESSION['errors']) && isset($_SESSION['login'])) { //echo "<b> {$_SESSION['errors'][0]} </b>";
 					 ?> <script> $(window).on("load", function(){ openLogin(); }); </script> <?php
 					unset($_SESSION['user']);} ?>
 				<?php 
@@ -83,7 +83,18 @@
 					  foreach ($_SESSION['errors'] as $error) {
 						echo "<div class='error'>{$error}</div>";
 					  }
-					  unset($_SESSION['errors']);
+					  
+					  /* TEST CODE, REMOVE LATER */
+					  if(isset($_SESSION['passhash'])){
+					  	echo "<div class='error'>{$_SESSION['passhash']}</div>";
+					  }
+					  if(isset($_SESSION['hashtest'])){
+					  	echo "<div class='error'>{$_SESSION['hashtest']}</div>";
+					  }
+					  /* TEST CODE END*/
+					  
+					  unset($_SESSION['errors']);				  
+					  
 					} ?>	
 				<button type="submit" class="btn">Login</button>
 				<button type="button" class="btn cancel" onclick="closeLogin()">Close</button>

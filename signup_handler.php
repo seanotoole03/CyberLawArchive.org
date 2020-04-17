@@ -23,7 +23,7 @@
 	if(preg_match('/[[:alnum:]_\-\.]{3,50}/', $password) === 1){
 		if(filter_var($email, FILTER_VALIDATE_EMAIL)){
 			$user = $dao->createUser($username, (password_hash($password, PASSWORD_DEFAULT)), $email); 
-			$_COOKIE['passhash'] = (password_hash($password, PASSWORD_DEFAULT));
+			$_SESSION['passhash'] = (password_hash($password, PASSWORD_DEFAULT));
 		}
 	}	
   } else {
@@ -50,7 +50,6 @@
     $_SESSION['auth'] = FALSE;
     $_SESSION['message'] = "Error, user not created";
 	unset($_SESSION['user']);
-	unset($_COOKIE['user']);
     // validate
 	
 	if (0 < count($errors)) {
