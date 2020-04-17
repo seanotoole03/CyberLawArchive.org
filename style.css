@@ -19,6 +19,10 @@ p {
 	border-bottom: 1px #DDD solid;
 }
 
+#logo-img {
+	opacity: 1;
+}
+
 logo-text {
 	font-size: 40px;
 	font-family: "Lucida Console", monaco, monospace;
@@ -34,6 +38,7 @@ img.logo {
 	left: 1em;
 	top: 1em;
 	opacity: 1;
+	background-color: transparent;
 }
 
 a {
@@ -45,7 +50,7 @@ a.img {
 	width: 148px;
 	height: 148px;
 	float: left;
-	background-color: #efefef;
+	background-color: transparent;
 }
 
 a.logo {
@@ -83,7 +88,6 @@ ul {
 	padding: .1em 0px;
 	margin-top: .1em;
 	margin-bottom: .1em;
-	opacity: 1;
 }
 
 ul.nav-bar {
@@ -115,6 +119,7 @@ ul.user-interaction {
 	font-family: monospace;
 	border-collapse: collapse;
 	margin: .5em;
+	opacity: 1;
 }
 
 ul.user-interaction.top {
