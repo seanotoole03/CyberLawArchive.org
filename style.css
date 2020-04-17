@@ -24,6 +24,7 @@ logo-text {
 	font-family: "Lucida Console", monaco, monospace;
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: black;
+	background-color: transparent;
 }
 
 img.logo {
@@ -141,6 +142,7 @@ div.top-window {
 }
 
 .top-background {
+	text-align: left;
 	width:100%;
 }
 
@@ -241,6 +243,7 @@ div.footer {
 .link-logo-text {
 	text-align: center;
 	font-size: 24px;
+	background-color: transparent;
 	/*font-family:*/
 	
 }
