@@ -22,6 +22,9 @@
 	
     $_SESSION['auth'] = TRUE;
 	$_SESSION['user'] = $username;	
+	unset($_SESSION['login']);
+	unset($_SESSION['signup']);
+	
     header("Location: https://young-bayou-40048.herokuapp.com/index.php");
     exit;
   }else{
