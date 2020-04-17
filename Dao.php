@@ -59,7 +59,7 @@ class Dao {
 		$stmt = FALSE;
 	  }
 	  //return $stmt;
-	  if($stmt->fetch() === FALSE) {
+	  if($stmt === FALSE) {
 		return FALSE;
 	  } else {
 		return $stmt;
