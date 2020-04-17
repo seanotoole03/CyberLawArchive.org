@@ -168,7 +168,7 @@ div.top-window {
 }
 
 .top-background.index {
-	background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(239, 239, 239, 1)), url('resources/index.jpg');
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(239, 239, 239, 1)), url('resources/index.jpg');
 	/*background-image: url('resources/index.jpg');*/
 	background-repeat: no-repeat;
 }
