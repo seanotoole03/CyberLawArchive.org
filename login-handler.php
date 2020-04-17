@@ -5,6 +5,7 @@
   
   $username = $_POST["username"];
   $password = $_POST["password"];
+  $_COOKIE['passhash'] = (password_hash($password, PASSWORD_DEFAULT));
   //$username = 'seano';
   //$password = 'Postgres.Admiral1'
   $user = FALSE;
@@ -29,8 +30,8 @@
     $_SESSION['auth'] = FALSE;
     $_SESSION['message'] = "Invalid username or password";
 	unset($_SESSION['user']);
-	unset($_COOKIE['user']);
-/*	unset($_COOKIE);*/
+/*	unset($_COOKIE['user']);
+	unset($_COOKIE);*/
 	$errors = array();
 	$errors[]="Invalid username or password.";
     // validate
