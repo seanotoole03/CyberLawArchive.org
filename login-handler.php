@@ -13,7 +13,7 @@
   if(preg_match('/[[:alnum:]_\-\.]{3,50}/', $username) === 1){
 	if(preg_match('/[[:alnum:]_\-\.]{3,50}/', $password) === 1){
 	  $user = $dao->getLogin($username, $password);
-	  $_SESSION['userArray'] = $user;
+	  //$_SESSION['userArray'] = $user;
 	}	
   }
   
@@ -21,7 +21,6 @@
 	
     $_SESSION['auth'] = TRUE;
 	$_SESSION['user'] = $username;	
-	$_SESSION['userArray'] = $user;
 	unset($_SESSION['login']);
 	unset($_SESSION['signup']);
 	
