@@ -141,7 +141,14 @@ div.top-window {
 
 .top-background {
 	width:100%;
-	min-height: 128px;
+}
+
+#login {
+	display: none;
+}
+
+#signUp {
+	display: none;
 }
 
 .top-background.index {
