@@ -36,11 +36,11 @@
 		<meta charset="utf-8" />
 		<meta author="a_complete_idiot" />
 		<meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport" />
+		<script src="js/jquery-3.4.1.min.js"></script>
 		<link href="style.css" rel="stylesheet" />
 		<link href="resources/cyber-law.png" type="image/png" rel="shortcut icon" />
 		<link rel="stylesheet" href="editor.md/css/editormd.min.css" />
 		<script src="editor.md/editormd.min.js"></script>
-		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/functions.js"></script>
 
 	</head>
