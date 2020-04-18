@@ -41,6 +41,7 @@
 		<link href="resources/cyber-law.png" type="image/png" rel="shortcut icon" />
 		<link rel="stylesheet" href="editor.md/css/editormd.min.css" />
 		<script src="editor.md/editormd.min.js"></script>
+		<script src="editor.md/languages/en.js"></script>
 		<script src="js/functions.js"></script>
 
 	</head>
