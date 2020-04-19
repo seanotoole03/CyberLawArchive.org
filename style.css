@@ -170,27 +170,31 @@ div.top-window {
 .top-background.index {
 	background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(239, 239, 239, 1)), url('resources/index.jpg');
 	/*background-image: url('resources/index.jpg');*/
-	background-size: 100%, 100%;
+	background-size: 100% 148px, 100% 148px;
 	background-repeat: no-repeat;
 }
 
 .top-background.intl {
 	background-image:  linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(239, 239, 239, 1)), url("/resources/intl_globe.jpg");
+	background-size: 100% 148px, 100% 148px;
 	background-repeat: no-repeat;
 }
 
 .top-background.country {
 	background-image:  linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(239, 239, 239, 1)), url("/resources/world-flag-map.jpg");
+	background-size: 100% 148px, 100% 148px;
 	background-repeat: no-repeat;
 }
 
 .top-background.resources {
 	background-image:  linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(239, 239, 239, 1)), url("/resources/resources.jpg");
+	background-size: 100% 148px, 100% 148px;
 	background-repeat: no-repeat;
 }
 
 .top-background.about {
 	background-image:  linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(239, 239, 239, 1)), url("/resources/index.jpg");
+	background-size: 100% 148px, 100% 148px;
 	background-repeat: no-repeat;
 }
 
