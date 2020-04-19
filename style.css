@@ -168,33 +168,33 @@ div.top-window {
 }
 
 .top-background.index {
-	background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(239, 239, 239, 1)) left top, url('resources/index.jpg') left top;
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(239, 239, 239, 1)), url('resources/index.jpg');
 	/*background-image: url('resources/index.jpg');*/
-	background-size: contain, contain;
+	background-size: cover, cover;
 	background-repeat: no-repeat;
 }
 
 .top-background.intl {
 	background-image:  linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(239, 239, 239, 1)), url("/resources/intl_globe.jpg");
-	background-size: contain, contain;
+	background-size: cover, cover;
 	background-repeat: no-repeat;
 }
 
 .top-background.country {
 	background-image:  linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(239, 239, 239, 1)), url("/resources/world-flag-map.jpg");
-	background-size: contain, contain;
+	background-size: cover, cover;
 	background-repeat: no-repeat;
 }
 
 .top-background.resources {
 	background-image:  linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(239, 239, 239, 1)), url("/resources/resources.jpg");
-	background-size: contain, contain;
+	background-size: cover, cover;
 	background-repeat: no-repeat;
 }
 
 .top-background.about {
 	background-image:  linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(239, 239, 239, 1)), url("/resources/index.jpg");
-	background-size: contain, contain;
+	background-size: cover, cover;
 	background-repeat: no-repeat;
 }
 
@@ -221,7 +221,7 @@ div.main.content {
 	text-align: left;
 	float: left;
 	width: 70%;
-	height: 60%;
+	height: auto;
 }
 
 div.main.side-panel {
@@ -248,7 +248,7 @@ div.footer {
 }
 
 #footer {
-	position: absolute;  
+	position: relative;  
 	left: 0;
 	bottom: 0;
 	width: 100%;
@@ -282,13 +282,13 @@ div.footer {
   z-index: 1;
 }
 
-.form-container {
+.form-coverer {
   max-width: 300px;
   padding: 10px;
   background-color: white;
 }
 
-.form-container input[type=text], .form-container input[type=password] {
+.form-coverer input[type=text], .form-coverer input[type=password] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
