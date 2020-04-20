@@ -42,8 +42,21 @@
 		<link rel="stylesheet" href="editor.md/css/editormd.min.css" />
 		<script src="editor.md/editormd.min.js"></script>
 		<script src="editor.md/languages/en.js"></script>
+		<script type="text/javascript" src="js/jquery.twitter.feed.js"></script>
 		<script src="js/functions.js"></script>
-
+		<script type="text/JavaScript">
+			$(document).ready(function() {
+				$('#twitter-feed').dcTwitterFeed({
+					id: '#cyberlaw',
+					//tweetId: 'designchemical',
+					retweets: false,
+					replies: false,
+					avatar: false,
+					results: 5,
+					images: 'small'
+				});
+			});
+		</script>
 	</head>
 <!--	<header> CyberLawArchive.org </header> -->
 	<body>
@@ -157,11 +170,13 @@
 			</script>
 			</div>
 			<div class="column main side-panel">
-			<ul>
-				<li><b> Side Panel Placeholder </b></li>
-			</ul>
+			<div id="twitter-feed"></div>
 			<a href="https://twitter.com/intent/tweet?button_hashtag=cyberlaw&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #cyberlaw</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<ul>
+				<li>Feed implementation courtesy of <a href="http://www.designchemical.com/blog/index.php/jquery/jquery-tutorial-create-a-jquery-twitter-feed-plugin/">designchemical.com</a></li>
+			</ul>
 			</div>
+			
 		</div>
 		<div class="footer" id="footer">
 			<ul class="user-interaction bottom"> 
