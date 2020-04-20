@@ -154,8 +154,9 @@
 				<li><p><b> This site exists to collect, compile, and serve as a backup storage for important documents related to cyber law
 					across recent history.</b></p></li>
 				<li> </li>
-				<li><p><b>Sample markdown editor test insert-- used by authorized users only.</b></p></li>
+				<li><p><b>Sample markdown editor test insert-- used and visible by authorized users only.</b></p></li>
 			</ul>
+			<?php if(isset($_SESSION['user'])) { if($dao->getPermissions($_SESSION['user'])) { ?>
 			<div id="editor">
 				<!-- Tips: Editor.md can auto append a `<textarea>` tag -->
 				<textarea style="display:none;">### Hello Editor.md !</textarea>
@@ -170,6 +171,7 @@
 					});
 				});
 			</script>
+			<?php } } ?>
 			</div>
 			<div class="column main side-panel">
 			<a class="twitter-timeline" href="https://twitter.com/SeanDOToole1?ref_src=twsrc%5Etfw">Tweets by SeanDOToole1</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
