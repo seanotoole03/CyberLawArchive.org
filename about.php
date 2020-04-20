@@ -47,7 +47,7 @@
 	</head>
 <!--	<header> CyberLawArchive.org </header> -->
 	<body>
-		<div class="top-background index">
+		<div class="top-background about">
 		<div class="top-window">
 			<a class="img" href="index.php"> <img id="logo-img" class="logo" src="resources/cyber-law.png" alt="a gavel in front of a laptop screen"
 			title="clip art cyber law image from online public domain source"/> </a>
@@ -137,30 +137,16 @@
 		<div class="row main">
 			<div class="column main content">
 			<ul>
-				<li><h1>An Archive of Cyber Law Content</h1></li>
-				<li><p><b> This site exists to collect, compile, and serve as a backup storage for important documents related to cyber law
-					across recent history.</b></p></li>
+				<li><h1>About us</h1></li>
+				<li><p><b> We are...</b></p></li>
 			</ul>
-			<div id="editor">
-				<!-- Tips: Editor.md can auto append a `<textarea>` tag -->
-				<textarea style="display:none;">### Hello Editor.md !</textarea>
-			</div>
-			<script type="text/javascript">
-				$(function() {
-					var editor = editormd("editor", {
-						// width: "100%",
-						// height: "100%",
-						// markdown: "xxxx",     // dynamic set Markdown text
-						path : "editor.md/lib/"  // Autoload modules mode, codemirror, marked... dependents libs path
-					});
-				});
-			</script>
+
+
 			</div>
 			<div class="column main side-panel">
 			<ul>
 				<li><b> Side Panel Placeholder </b></li>
 			</ul>
-			<a href="https://twitter.com/intent/tweet?button_hashtag=cyberlaw&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #cyberlaw</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			</div>
 		</div>
 		<div class="footer" id="footer">
