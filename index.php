@@ -153,6 +153,8 @@
 				<li><h1>An Archive of Cyber Law Content</h1></li>
 				<li><p><b> This site exists to collect, compile, and serve as a backup storage for important documents related to cyber law
 					across recent history.</b></p></li>
+				<li> </li>
+				<li><p><b>Sample markdown editor test insert-- used by authorized users only.</b></p></li>
 			</ul>
 			<div id="editor">
 				<!-- Tips: Editor.md can auto append a `<textarea>` tag -->

@@ -8,6 +8,21 @@
 		<meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport" />
 		<link href="style.css" rel="stylesheet" />
 		<link href="resources/cyber-law.png" type="image/png" rel="shortcut icon" />
+		<script src="js/jquery.twitter.feed.js"></script>
+		<script src="js/functions.js"></script>
+		<script type="text/JavaScript">
+			$(window).on("load", function() {
+				$('#twitter-feed').dcTwitterFeed({
+					id: '#cyberlaw',
+					tweetId: 'cyberlaw',
+					retweets: false,
+					replies: false,
+					avatar: false,
+					results: 5,
+					images: 'small'
+				});
+			});
+		</script>
 	</head>
 <!--	<header> CyberLawArchive.org </header> -->
 	<body>

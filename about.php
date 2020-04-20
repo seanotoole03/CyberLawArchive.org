@@ -42,7 +42,21 @@
 		<link rel="stylesheet" href="editor.md/css/editormd.min.css" />
 		<script src="editor.md/editormd.min.js"></script>
 		<script src="editor.md/languages/en.js"></script>
+		<script src="js/jquery.twitter.feed.js"></script>
 		<script src="js/functions.js"></script>
+		<script type="text/JavaScript">
+			$(window).on("load", function() {
+				$('#twitter-feed').dcTwitterFeed({
+					id: '#cyberlaw',
+					tweetId: 'cyberlaw',
+					retweets: false,
+					replies: false,
+					avatar: false,
+					results: 5,
+					images: 'small'
+				});
+			});
+		</script>
 
 	</head>
 <!--	<header> CyberLawArchive.org </header> -->

@@ -54,6 +54,7 @@ class Dao {
 	  $stmt = $conn->prepare("SELECT password FROM Users WHERE username='{$username}'");
 	  $stmt->execute();
 	  if(password_verify($password, ($stmt->fetch()[0]))){
+		//$user_id_stmt = $conn->prepare("SELECT user_id FROM Users WHERE username='{$username}'");
 		return TRUE;  
 	  } else {
 		return FALSE;
@@ -94,6 +95,23 @@ class Dao {
     }
 	try {	
 	  $stmt = $conn->prepare("DELETE FROM Users WHERE username='{$username}' AND password='{$password}'");
+	  $result = $stmt->execute(); 
+	  return $result;
+	} catch(Exception $e) {
+	  $this->logger->LogError("Couldn't connect to the database: " . $e->getMessage());
+      echo print_r($e,1);
+      exit;
+    }  
+  }
+  
+  public function getPermissions($username) {
+	$conn = $this->getConnection();
+	if(is_null($conn)) {
+	  $this->logger->LogError("Couldn't connect to the database.");
+      return;
+    }
+	try {	
+	  $stmt = $conn->prepare("SELECT permissions FROM Users WHERE username='{$username}'");
 	  $result = $stmt->execute(); 
 	  return $result;
 	} catch(Exception $e) {
