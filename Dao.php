@@ -21,7 +21,7 @@ class Dao {
 		 $this->logger->LogError("Error reading database configuration file");
 		throw new \Exception("Error reading database configuration file");
 	}
-	print_r($params);
+	//print_r($params);
 	// connect to the postgresql database
 	try{
 		$conStr = sprintf("pgsql:host=%s;dbname=%s;user=%s;password=%s", 
