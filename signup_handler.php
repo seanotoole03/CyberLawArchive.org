@@ -9,17 +9,6 @@
   $email = $_POST["email"];
   $index = 0;
   
-  if(strcmp($password, $confirm_password) != 0){
-	$errors[] = "Passwords do not match.";
-	unset($_SESSION['login']);
-	$_SESSION['signup'] = TRUE;
-	$_SESSION['auth'] = FALSE;
-	$_SESSION['form'] = $_POST;
-	$_SESSION['errors'] = $errors;
-	header("Location: https://young-bayou-40048.herokuapp.com/index.php");
-	exit;
-  }
-  
   if(preg_match('/[[:alnum:]_\-\.]{3,50}/', $username) === 1){
 	if(preg_match('/[[:alnum:]_\-\.]{3,50}/', $password) === 1){
 		if(filter_var($email, FILTER_VALIDATE_EMAIL)){
@@ -30,13 +19,16 @@
 	if(strlen($username) > 50 || strlen($username) < 3){
 		$errors[$index] = "Error, username should be within 3-50 alphanumeric characters"; 
 		$index++;
-	} else if(strlen($password) > 50 || strlen($password) < 3) {
+	} if(strlen($password) > 50 || strlen($password) < 3) {
 		$errors[$index] = "Error, password should be within 3-50 alphanumeric characters";
 		$index++;
-	} else if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+	}   if(strcmp($password, $confirm_password) != 0){
+		$errors[$index] = "Passwords do not match.";
+		$index++;
+    } if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 		$errors[$index] = "Error, invalid email address format or charset. Should use standard alphanumeric characters and ___@___.__ format";
 		$index++;
-	} else {
+	} if(!(preg_match('/[[:alnum:]_\-\.]{3,50}/', $username) === 1) || !(preg_match('/[[:alnum:]_\-\.]{3,50}/', $password) === 1)){ {
 		$errors[$index] = "Error, username and password should only contain alphanumeric characters, and/or '_', '-', '.' symbols"; 
 		$index++;
 	}
