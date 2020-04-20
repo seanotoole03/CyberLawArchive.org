@@ -28,7 +28,7 @@
     } if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 		$errors[$index] = "Error, invalid email address format or charset. Should use standard alphanumeric characters and ___@___.__ format";
 		$index++;
-	} if(!(preg_match('/[[:alnum:]_\-\.]{3,50}/', $username) === 1) || !(preg_match('/[[:alnum:]_\-\.]{3,50}/', $password) === 1)){ {
+	} if(!(preg_match('/[[:alnum:]_\-\.]{3,50}/', $username) === 1) || !(preg_match('/[[:alnum:]_\-\.]{3,50}/', $password) === 1)) {
 		$errors[$index] = "Error, username and password should only contain alphanumeric characters, and/or '_', '-', '.' symbols"; 
 		$index++;
 	}
