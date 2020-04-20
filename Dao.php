@@ -111,9 +111,10 @@ class Dao {
       return;
     }
 	try {	
+	  $result = 0;
 	  $stmt = $conn->prepare("SELECT permissions FROM Users WHERE username='{$username}'");
 	  $result = $stmt->execute(); 
-	  print_r($stmt);
+	  print_r($stmt->fetch());
 	  return $stmt;
 	} catch(Exception $e) {
 	  $this->logger->LogError("Couldn't connect to the database: " . $e->getMessage());
