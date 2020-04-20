@@ -42,10 +42,10 @@
 		<link rel="stylesheet" href="editor.md/css/editormd.min.css" />
 		<script src="editor.md/editormd.min.js"></script>
 		<script src="editor.md/languages/en.js"></script>
-		<script type="text/javascript" src="js/jquery.twitter.feed.js"></script>
+		<script src="js/jquery.twitter.feed.js"></script>
 		<script src="js/functions.js"></script>
 		<script type="text/JavaScript">
-			$(document).ready(function() {
+			$(window).on("load", function() {
 				$('#twitter-feed').dcTwitterFeed({
 					id: '#cyberlaw',
 					//tweetId: 'designchemical',
