@@ -70,6 +70,10 @@
 					if (isset($_SESSION['errors']) && isset($_SESSION['login'])) { //echo "<b> {$_SESSION['errors'][0]} </b>";
 					 ?> <script> $(window).on("load", function(){ openLogin(); }); </script> <?php
 					unset($_SESSION['user']);} ?>
+				<?php
+					if (isset($_SESSION['errors']) && isset($_SESSION['signup'])) { //echo "<b> {$_SESSION['errors'][0]} </b>";
+					 ?> <script> $(window).on("load", function(){ openSignUp(); }); </script> <?php
+					unset($_SESSION['user']);} ?>
 				<?php 
 					if(isset($_SESSION['user'])){
 				?>
