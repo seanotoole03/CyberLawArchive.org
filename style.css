@@ -323,6 +323,27 @@ div.footer {
  /* width: 80%; */
 }
 
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 20px 0;
+  border: none;
+  background: #fefefe;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
 button {
   background-color: #4CAF50;
   color: white;
