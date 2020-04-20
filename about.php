@@ -130,15 +130,15 @@
 				<li class="nav-bar"><a class="nav-link" href="./intl.php"> International </a></li>
 				<li class="nav-bar"><a class="nav-link"  href="./country.php"> By Country </a></li>
 				<li class="nav-bar"><a class="nav-link"  href="./resources.php"> Legal Resources </a></li>
-				<li class="nav-bar"><a class="nav-link"  href="./about.php"> About </a></li>
+				<li class="nav-bar current"><a class="nav-link"  href="./about.php"> About </a></li>
 			</ul>
 			<hr/>
 		</div>
 		<div class="row main">
 			<div class="column main content">
 			<ul>
-				<li><h1>About us</h1></li>
-				<li><p><b> We are...</b></p></li>
+				<li><h1>About Us</h1></li>
+				<li><p><b> We are not great programmers.</b></p></li>
 			</ul>
 
 

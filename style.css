@@ -117,6 +117,10 @@ li.nav-bar:hover {
 	background-color: #f5f5f5;
 }
 
+li.nav-bar.current {
+	background-color: #f5f5f5;
+}
+
 ul.user-interaction {
 	float: right;
 	font-size: 12px;
