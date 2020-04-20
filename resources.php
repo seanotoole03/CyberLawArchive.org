@@ -8,6 +8,7 @@
 		<meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport" />
 		<link href="style.css" rel="stylesheet" />
 		<link href="resources/cyber-law.png" type="image/png" rel="shortcut icon" />
+		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/jquery.twitter.feed.js"></script>
 		<script src="js/functions.js"></script>
 		<script type="text/JavaScript">
