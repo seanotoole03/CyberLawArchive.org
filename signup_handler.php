@@ -7,6 +7,7 @@
   $password = $_POST["password"];
   $confirm_password = $_POST["password2"];
   $email = $_POST["email"];
+  $index = 0;
   
   if(strcmp($password, $confirm_password) != 0){
 	$errors[] = "Passwords do not match.";
@@ -27,13 +28,17 @@
 	}	
   } else {
 	if(strlen($username) > 50 || strlen($username) < 3){
-		$errors[] = "Error, username should be within 3-50 alphanumeric characters"; 
+		$errors[$index] = "Error, username should be within 3-50 alphanumeric characters"; 
+		index++;
 	} else if(strlen($password) > 50 || strlen($password) < 3) {
-		$errors[] = "Error, password should be within 3-50 alphanumeric characters"; 
+		$errors[$index] = "Error, password should be within 3-50 alphanumeric characters";
+		index++;
 	} else if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-		$errors[] = "Error, invalid email address format or charset. Should use standard alphanumeric characters and ___@___.__ format";
+		$errors[$index] = "Error, invalid email address format or charset. Should use standard alphanumeric characters and ___@___.__ format";
+		$index++;
 	} else {
-		$errors[] = "Error, username and password should only contain alphanumeric characters, and/or '_', '-', '.' symbols"; 
+		$errors[$index] = "Error, username and password should only contain alphanumeric characters, and/or '_', '-', '.' symbols"; 
+		$index++;
 	}
   } 
   
