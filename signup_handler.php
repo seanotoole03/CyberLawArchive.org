@@ -29,10 +29,10 @@
   } else {
 	if(strlen($username) > 50 || strlen($username) < 3){
 		$errors[$index] = "Error, username should be within 3-50 alphanumeric characters"; 
-		index++;
+		$index++;
 	} else if(strlen($password) > 50 || strlen($password) < 3) {
 		$errors[$index] = "Error, password should be within 3-50 alphanumeric characters";
-		index++;
+		$index++;
 	} else if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 		$errors[$index] = "Error, invalid email address format or charset. Should use standard alphanumeric characters and ___@___.__ format";
 		$index++;
