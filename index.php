@@ -48,7 +48,7 @@
 			$(window).on("load", function() {
 				$('#twitter-feed').dcTwitterFeed({
 					id: '#cyberlaw',
-					//tweetId: 'designchemical',
+					tweetId: 'cyberlaw',
 					retweets: false,
 					replies: false,
 					avatar: false,
