@@ -104,9 +104,9 @@
 			</ul>
 			</div>
 			<div class="column main side-panel">
-			<ul>
-				<li><b> Side Panel Placeholder </b></li>
-			</ul>
+				<a class="twitter-timeline" href="https://twitter.com/SeanDOToole1?ref_src=twsrc%5Etfw">Tweets by SeanDOToole1</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				<!-- <div id="twitter-feed"></div> -->
+				<a href="https://twitter.com/intent/tweet?button_hashtag=cyberlaw&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #cyberlaw</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>			
 			</div>
 		</div>
 		<div class="footer" id="footer">
