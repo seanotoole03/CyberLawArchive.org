@@ -31,8 +31,8 @@
             var cq = o.id.split('#');
             if(cq.length > 1){
                 var rts = o.retweets == false ? '+exclude:retweets' : '' ;
-                url = 'https://api.twitter.com/1.1/search/tweets.json?q='+encodeURIComponent(cq[1])+rts+'&rpp='+o.results+'&include_entities=true&result_type=mixed';
-				//https://api.twitter.com/1.1/search/tweets.json?q=%23cybersecurity&result_type=recent
+                //url = 'https://api.twitter.com/1.1/search/tweets.json?q='+encodeURIComponent(cq[1])+rts+'&rpp='+o.results+'&include_entities=true&result_type=mixed';
+				url = 'https://api.twitter.com/1.1/search/tweets.json?q=%23cybersecurity&result_type=recent';
             }
  
             // jQuery AJAX call to Twitter API
