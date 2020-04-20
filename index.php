@@ -170,13 +170,14 @@
 			</script>
 			</div>
 			<div class="column main side-panel">
-			<div id="twitter-feed"></div>
-			<!-- <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Congratulations to our friends and colleagues at Harvard’s Cyberlaw clinic on 20 years of public interest student lawyering! ⁦<a href="https://twitter.com/cyberlawclinic?ref_src=twsrc%5Etfw">@cyberlawclinic</a>⁩ ⁦<a href="https://twitter.com/cbavitz?ref_src=twsrc%5Etfw">@cbavitz</a>⁩ ⁦ <a href="https://t.co/N4tt4OBwND">https://t.co/N4tt4OBwND</a></p>&mdash; AU IP Clinic (@ipclinics) <a href="https://twitter.com/ipclinics/status/1248674550197489670?ref_src=twsrc%5Etfw">April 10, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-			<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Washington state has successfully tailored its <a href="https://twitter.com/hashtag/databreach?src=hash&amp;ref_src=twsrc%5Etfw">#databreach</a> law to address a commonly used (but often overlooked) PIN—the last four digits of a Social Security number. My latest ...<a href="https://twitter.com/hashtag/privacy?src=hash&amp;ref_src=twsrc%5Etfw">#privacy</a> <a href="https://twitter.com/hashtag/breach?src=hash&amp;ref_src=twsrc%5Etfw">#breach</a> <a href="https://t.co/McVkehGayt">https://t.co/McVkehGayt</a></p>&mdash; Mark Smith (@smith_cyberlaw) <a href="https://twitter.com/smith_cyberlaw/status/1242779940522790913?ref_src=twsrc%5Etfw">March 25, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-			<a href="https://twitter.com/intent/tweet?button_hashtag=cyberlaw&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #cyberlaw</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
-			<ul>
+			<a class="twitter-timeline" href="https://twitter.com/SeanDOToole1?ref_src=twsrc%5Etfw">Tweets by SeanDOToole1</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<!-- <div id="twitter-feed"></div>
+			<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Congratulations to our friends and colleagues at Harvard’s Cyberlaw clinic on 20 years of public interest student lawyering! ⁦<a href="https://twitter.com/cyberlawclinic?ref_src=twsrc%5Etfw">@cyberlawclinic</a>⁩ ⁦<a href="https://twitter.com/cbavitz?ref_src=twsrc%5Etfw">@cbavitz</a>⁩ ⁦ <a href="https://t.co/N4tt4OBwND">https://t.co/N4tt4OBwND</a></p>&mdash; AU IP Clinic (@ipclinics) <a href="https://twitter.com/ipclinics/status/1248674550197489670?ref_src=twsrc%5Etfw">April 10, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Washington state has successfully tailored its <a href="https://twitter.com/hashtag/databreach?src=hash&amp;ref_src=twsrc%5Etfw">#databreach</a> law to address a commonly used (but often overlooked) PIN—the last four digits of a Social Security number. My latest ...<a href="https://twitter.com/hashtag/privacy?src=hash&amp;ref_src=twsrc%5Etfw">#privacy</a> <a href="https://twitter.com/hashtag/breach?src=hash&amp;ref_src=twsrc%5Etfw">#breach</a> <a href="https://t.co/McVkehGayt">https://t.co/McVkehGayt</a></p>&mdash; Mark Smith (@smith_cyberlaw) <a href="https://twitter.com/smith_cyberlaw/status/1242779940522790913?ref_src=twsrc%5Etfw">March 25, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+			<a href="https://twitter.com/intent/tweet?button_hashtag=cyberlaw&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #cyberlaw</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<!-- <ul>
 				<li>Feed implementation courtesy of <a href="http://www.designchemical.com/blog/index.php/jquery/jquery-tutorial-create-a-jquery-twitter-feed-plugin/">designchemical.com</a></li>
-			</ul>
+			</ul> -->
 			</div>
 			
 		</div>

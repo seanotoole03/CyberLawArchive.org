@@ -25,7 +25,7 @@
             $(el).append('<ul class="stream"></ul>');
  
             // Set Twitter API url
-            var url = 'https://api.twitter.com/1/statuses/user_timeline.json?screen_name='+o.id+'&count='+o.results+'&include_entities=true&include_rts='+o.retweets+'&exclude_replies='+ o.replies+'&callback=?';
+            var url = 'https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name='+o.id+'&count='+o.results+'&include_entities=true&include_rts='+o.retweets+'&exclude_replies='+ o.replies+'&callback=?';
  
             // Check if search feed & change API url if true
             var cq = o.id.split('#');
