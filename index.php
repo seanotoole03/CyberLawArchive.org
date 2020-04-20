@@ -156,7 +156,7 @@
 				<li> </li>
 				<li><p><b>Sample markdown editor test insert-- used and visible by authorized users only.</b></p></li>
 			</ul>
-			<?php if(isset($_SESSION['user'])) { if($dao->getPermissions($_SESSION['user'])) { ?>
+			<?php if(isset($_SESSION['user'])) { if($dao->getPermissions($_SESSION['user']) == 1) { ?>
 			<div id="editor">
 				<!-- Tips: Editor.md can auto append a `<textarea>` tag -->
 				<textarea style="display:none;">### Hello Editor.md !</textarea>
