@@ -106,7 +106,7 @@
 			<div id="contact-content" class="modal-content form-container">
 				<h1>Contact Us</h1>
 				<b> If you're in law, you can get my info by legal info digging. If you're in cybersecurity, you can get my info by literal dig commands. </b>
-
+				<b> Good Luck. </b>
 				<button type="button" class="btn cancel" onclick="closeContact()">Close</button>
 			</div>
 		</div>

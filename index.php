@@ -40,6 +40,7 @@
 		<link href="style.css" rel="stylesheet" />
 		<link href="resources/cyber-law.png" type="image/png" rel="shortcut icon" />
 		<link rel="stylesheet" href="editor.md/css/editormd.min.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 		<script src="editor.md/editormd.min.js"></script>
 		<script src="editor.md/languages/en.js"></script>
 		<script src="js/jquery.twitter.feed.js"></script>
@@ -144,7 +145,8 @@
 		<div id="contact" class="form-popup modal" >	
 			<div id="contact-content" class="modal-content form-container">
 				<h1>Contact Us</h1>
-				<b> If you're in law, you can get my info by legal info digging. If you're in cybersecurity, you can get my info by literal dig commands. </b>
+				<b> If you're in law, you can get my info by legal info digging. If you're in cybersecurity, you can get my info by literal dig commands.</b>
+				<b> Good Luck. </b>
 
 				<button type="button" class="btn cancel" onclick="closeContact()">Close</button>
 			</div>
