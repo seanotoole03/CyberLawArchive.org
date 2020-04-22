@@ -81,7 +81,7 @@
 					<li class="user-interaction"><a class="nav-link"  href="#" onclick="openSignUp()"> Sign Up </a></li>
 				<?php } ?>
 
-				<li class="user-interaction"><a class="nav-link"  href="./contact.php"> Contact Us </a></li>
+				<li class="user-interaction"><a class="nav-link"  href="#" onclick="openContact()"> Contact Us </a></li>
 			</ul>
 		</div>
 		</div>
@@ -138,6 +138,14 @@
 			  </form>
 			</div>
 		</div>
+		<div id="contact" class="form-popup modal" >	
+			<div id="contact-content" class="modal-content form-container">
+				<h1>Contact Us</h1>
+				<b> If you're in law, you can get my info by legal info digging. If you're in cybersecurity, you can get my info by literal dig commands. </b>
+
+				<button type="button" class="btn cancel" onclick="closeContact()">Close</button>
+			</div>
+		</div>
 		<div class="nav-bar">
 			<hr/>
 			<ul class="nav-bar">
@@ -165,7 +173,7 @@
 		</div>
 		<div class="footer" id="footer">
 			<ul class="user-interaction bottom"> 
-				<li class="user-interaction"><a class="nav-link"  href="./contact.php"> Contact Us </a></li>
+				<li class="user-interaction"><a class="nav-link"  href="#" onclick="openContact()"> Contact Us </a></li>
 			</ul>
 		</div>
 	</body>
