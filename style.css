@@ -171,6 +171,11 @@ div.top-window {
 	display: none;
 }
 
+#contact {
+	display: none;
+	text-align: center;
+}
+
 .top-background.index {
 	background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(239, 239, 239, 1)), url('resources/index.jpg');
 	/*background-image: url('resources/index.jpg');*/
