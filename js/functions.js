@@ -1,3 +1,7 @@
+function loadUI() {
+  $("#UI").load("UI.txt"); 	
+}
+
 function openLogin() {
   document.getElementById('login').style.display = "block";
 }

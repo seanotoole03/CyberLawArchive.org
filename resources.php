@@ -133,7 +133,8 @@
 		<div id="contact" class="form-popup modal" >	
 			<div id="contact-content" class="modal-content form-container">
 				<h1>Contact Us</h1>
-				<b> If you're in law, you can get my info by legal info digging. If you're in cybersecurity, you can get my info by literal dig commands. </b>
+				<b> If you're in law, you can get my info by legal info digging.</b> 
+				<b>If you're in cybersecurity, you can get my info by literal dig commands.</b>
 				<b> Good Luck. </b>
 				<button type="button" class="btn cancel" onclick="closeContact()">Close</button>
 			</div>
@@ -152,7 +153,10 @@
 			<div class="column main content">
 			<ul>
 				<li><h1>Legal and Documentary Resources</h1></li>
-				<li><p><b> Many other sites cover the laws and documents we preserve here, and many are fantastic at what they do.</b></p></li>
+				<li><p><b> Many other sites cover the laws and documents we preserve here, and many are fantastic at what they do. Our goal is to provide a central location with as many resources as possible accessible in a simple, straightforward manner, as well as serve as a public archive for the safe storage of documents relevant to cyber legislation and case law. </b></p></li>
+				<li></li>
+				<li><a href="https://www.unodc.org/cld/v3/cybrepo/"> Cybercrime Repository </a>: A fantastic resource, built on a similar concept to this website, which houses an accessible database of relevant cyber legislation, case law, and lessons learned from past incidents. Built and maintained by the UN Office on Drugs and Crime (UNODC), this is a multilingual and internationally-focused webpage with a simple design and easy navigation.</li>
+				<li><a href="http://guides.ll.georgetown.edu/cyberspace"> Georgetown University International and Foreign Cyberspace Law Research Guide </a>: Hosted by the famous Georgetown Law School, this guide provides a number of links to sub-topics in international cyber law, and each links to a number of other valuable resources and sites. A number of the major resource links are locked behind Georgetown University account logins, but those that remain publicly available are well worth searching through when starting a search on international cyber law matters. </li>
 			</ul>
 			</div>
 			<div class="column main side-panel">

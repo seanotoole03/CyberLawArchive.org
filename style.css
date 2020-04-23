@@ -119,6 +119,7 @@ li.nav-bar:hover {
 }
 
 li.nav-bar.current {
+	color: gold;
 	background-color: #f5f5f5;
 }
 
