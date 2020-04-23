@@ -1,3 +1,30 @@
+<?php 
+	//include_once("index.php");
+	if(!isset($_SESSION)) {
+		session_start();
+	}
+	require_once("Dao.php");
+	$dao = new Dao();
+	
+	$name_preset = "";
+	$pass_preset = "";
+	$signUp_name_preset = "";
+	$signUp_pass_preset = "";
+	$signUp_email_preset = "";
+	
+	if (isset($_SESSION['form'])) {
+		if(isset($_SESSION['login'])){
+			$name_preset = $_SESSION['form']['username'];
+			$pass_preset = $_SESSION['form']['password'];
+		} else if(isset($_SESSION['signup'])){
+			$signUp_name_preset = $_SESSION['form']['username'];
+			$signUp_pass_preset = $_SESSION['form']['password'];
+			$signUp_email_preset = $_SESSION['form']['email'];
+		}
+	}
+	
+?>
+
 <html>
 	<head>
 		<title>Cyber Law Archive: Archiving Cyber Law, Regulation, and Discussion from Around the Globe</title>

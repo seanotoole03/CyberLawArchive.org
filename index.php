@@ -108,7 +108,8 @@
 					  
 					  unset($_SESSION['errors']);				  
 					  
-					} ?>	
+					} ?>
+					<!-- fadeout(2500,'error')?> -->	
 				<button type="submit" class="btn">Login</button>
 				<button type="button" class="btn cancel" onclick="closeLogin()">Close</button>
 			  </form>
